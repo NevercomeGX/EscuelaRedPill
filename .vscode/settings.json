@@ -1,5 +1,7 @@
 {
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "file:///g%3A/GIT/EscuelaRedPill/.github/workflow/React_test.yml"
-    }
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

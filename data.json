@@ -1,0 +1,69 @@
+{
+	"name": "Juan Lopez",
+	"avatar": "/assets/coding.png",
+	"links": [
+		{
+			"title": "Asesoría Emocional - privada con Andres",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/0c/df/79/0cdf799b5d31a5fb65d32d0752ced485.jpg",
+			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
+		},
+
+		{
+			"title": "Universo Femenino",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/ae/31/92/ae319267d0aa1964507cd7d7e9ac0401.jpg",
+			"message": "Curso completo para MUJERES"
+		},
+
+		{
+			"title": "Hombre Alfa",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/8a/1c/5a/8a1c5ab7ad064f04b08fa3726375f7c7.jpg",
+			"message": "Curso completo para HOMBRES"
+		},
+
+		{
+			"title": "Sanar una Ruptura Amorosa",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/15/76/f8/1576f845435e2ca55cdecce37f9dd912.jpg",
+			"message": "Curso completo para HOMBRES"
+		},
+
+		{
+			"title": "Sanar una Ruptura Amorosa",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/72/4e/75/724e752d03c2311b89d6b5a956b6fb70.jpg",
+			"message": "- Taller estilo asesoría emocional"
+		},
+
+		{
+			"title": "30 Días de Superación Personal ",
+			"href": "",
+			"image": "https://i.pinimg.com/236x/16/ac/98/16ac98ed8b321efab9dd94bacff9ec22.jpg",
+			"message": "- Programa de audio "
+		}
+	],
+	"socials": [
+		{
+			"title": "youtube",
+			"href": "https://twitter.com/juanlopezdev"
+		},
+		{
+			"title": "tiktok",
+			"href": "https://youtube.com/juanlopezdev"
+		},
+		{
+			"title": "instagram",
+			"href": "https://instagram.com/juanlopezdev"
+		},
+		{
+			"title": "telegram",
+			"href": "https://telegram.com/juanlopezdev"
+		},
+		{
+			"title": "tiktok",
+			"href": "https://youtube.com/juanlopezdev"
+		}
+	]
+}
