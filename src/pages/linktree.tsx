@@ -96,6 +96,60 @@ function Social({
 	);
 }
 
+function Maincard({
+	href,
+	title,
+	image,
+	message,
+	space,
+	flechita,
+}: {
+	href: string;
+	title: string;
+	image?: string;
+	message?: string;
+	space?: boolean;
+	flechita?: boolean;
+}) {
+	return (
+		<a
+			href={href}
+			target="_blank"
+			rel="noopener noreferrer"
+			className="flex items-center  w-full rounded-sm hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl"
+		>
+			<div className="flex text-center items-center  justify-between w-full">
+				<div className=" relative p-2 flex-grow-0  flex items-center">
+					{image && (
+						<Image
+							className="rounded-md"
+							alt={title}
+							src={image}
+							width={70}
+							height={70}
+						/>
+					)}
+				</div>
+				<div className="flex justify-center items-center flex-col w-full flex-grow-[1] p-2">
+					<h1 className=" font-semibold  text-gray-700 text-lg ">{title}</h1>
+					<p className=" text-gray-700 text-sm">{message}</p>
+				</div>
+				<div className="h-10 relative p-2 flex-grow-0  flex items-center">
+					{image && (
+						<Image
+							className="rounded-md"
+							alt={title}
+							src={image}
+							width={70}
+							height={70}
+						/>
+					)}
+				</div>
+			</div>
+		</a>
+	);
+}
+
 function LinkCard({
 	href,
 	title,
@@ -119,14 +173,14 @@ function LinkCard({
 			className="flex items-center  w-full rounded-sm hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl"
 		>
 			<div className="flex text-center items-center  justify-between w-full">
-				<div className="h-10 relative p-2 flex-grow-0  flex items-center">
+				<div className=" relative p-2 flex-grow-0  flex items-center">
 					{image && (
 						<Image
 							className="rounded-md"
 							alt={title}
 							src={image}
-							width={50}
-							height={100}
+							width={70}
+							height={70}
 						/>
 					)}
 				</div>
@@ -140,8 +194,8 @@ function LinkCard({
 							className="rounded-md"
 							alt={title}
 							src={image}
-							width={50}
-							height={100}
+							width={70}
+							height={70}
 						/>
 					)}
 				</div>
@@ -167,7 +221,7 @@ export default function Home({
 }) {
 	return (
 		<>
-			<div className="flex text-center items-center flex-col mx-auto w-full justify-center mt-12   ">
+			<div className="flex text-center items-center flex-col mx-auto w-full justify-center mt-12 px-4  ">
 				<Image
 					priority
 					className=" border-4 image-cropper"
@@ -197,19 +251,25 @@ export default function Home({
 						}}
 					/>
 				</p>
+				{data.maincard.map((link) => (
+					<Maincard key={link.href} {...link} />
+				))}
+				<div
+					className={` flex items-center  p-1 w-full rounded-sm  bg-gray-100 mb-3 max-w-[50px] max-h-[0] text-lg `}
+				></div>
+				<h2 className="text-white pb-2">Empieza Aquí 👇</h2>
 				{data.links.map((link) => (
 					<LinkCard key={link.href} {...link} />
 				))}
 				<div
-					className={` flex items-center  p-1 w-full rounded-sm  bg-gray-100 mb-3 max-w-[30px] max-h-[0] ${
-						flechita === true ? "none" : "flex"
-					}  text-lg `}
-				>
-					{/* <FontAwesomeIcon	icon={faCoffee} /> */}
-				</div>
+					className={` flex items-center  p-1 w-full rounded-sm  bg-gray-100 mb-3 max-w-[50px] max-h-[0] text-lg `}
+				></div>
 				{data.socials.map((link) => (
 					<Social key={link.href} {...link} />
 				))}
+				<div
+					className={` flex items-center  p-1 w-full rounded-sm  bg-gray-100 mb-3 max-w-[50px] max-h-[0] text-lg `}
+				></div>
 			</div>
 		</>
 	);

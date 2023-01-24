@@ -1,11 +1,19 @@
 {
 	"name": "Juan Lopez",
 	"avatar": "/assets/IMG_8642.png",
+	"maincard": [
+		{
+			"title": "Taller gratuito",
+			"href": "",
+			"image": "/assets/pngwing.png",
+			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
+		}
+	],
 	"links": [
 		{
 			"title": "Taller gratuito",
 			"href": "",
-			"image": "https://i.pinimg.com/236x/0c/df/79/0cdf799b5d31a5fb65d32d0752ced485.jpg",
+			"image": "/assets/pngwing.png",
 			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos",
 			"space": true
 		},
@@ -13,7 +21,7 @@
 		{
 			"title": "Assesoria Emocional",
 			"href": "",
-			"image": "https://i.pinimg.com/236x/ae/31/92/ae319267d0aa1964507cd7d7e9ac0401.jpg",
+			"image": "/assets/pngwing2.png",
 			"message": "Curso completo para MUJERES"
 		},
 
@@ -21,14 +29,14 @@
 			"title": "Taller de habilidades sociales",
 			"href": "",
 
-			"image": "https://i.pinimg.com/236x/8a/1c/5a/8a1c5ab7ad064f04b08fa3726375f7c7.jpg",
+			"image": "/assets/pngwing3.png",
 			"message": "Curso completo para HOMBRES"
 		},
 
 		{
 			"title": "Articulos",
 			"href": "",
-			"image": "https://i.pinimg.com/236x/15/76/f8/1576f845435e2ca55cdecce37f9dd912.jpg",
+			"image": "/assets/agent-smith.png",
 			"message": "Curso completo para HOMBRES",
 			"flechita": true,
 			"divider": "Socials"
