@@ -1,69 +1,60 @@
 {
 	"name": "Juan Lopez",
-	"avatar": "/assets/coding.png",
+	"avatar": "/assets/IMG_8642.png",
 	"links": [
 		{
-			"title": "Asesoría Emocional - privada con Andres",
+			"title": "Taller gratuito",
 			"href": "",
 			"image": "https://i.pinimg.com/236x/0c/df/79/0cdf799b5d31a5fb65d32d0752ced485.jpg",
-			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
+			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos",
+			"space": true
 		},
 
 		{
-			"title": "Universo Femenino",
+			"title": "Assesoria Emocional",
 			"href": "",
 			"image": "https://i.pinimg.com/236x/ae/31/92/ae319267d0aa1964507cd7d7e9ac0401.jpg",
 			"message": "Curso completo para MUJERES"
 		},
 
 		{
-			"title": "Hombre Alfa",
+			"title": "Taller de habilidades sociales",
 			"href": "",
+
 			"image": "https://i.pinimg.com/236x/8a/1c/5a/8a1c5ab7ad064f04b08fa3726375f7c7.jpg",
 			"message": "Curso completo para HOMBRES"
 		},
 
 		{
-			"title": "Sanar una Ruptura Amorosa",
+			"title": "Articulos",
 			"href": "",
 			"image": "https://i.pinimg.com/236x/15/76/f8/1576f845435e2ca55cdecce37f9dd912.jpg",
-			"message": "Curso completo para HOMBRES"
-		},
-
-		{
-			"title": "Sanar una Ruptura Amorosa",
-			"href": "",
-			"image": "https://i.pinimg.com/236x/72/4e/75/724e752d03c2311b89d6b5a956b6fb70.jpg",
-			"message": "- Taller estilo asesoría emocional"
-		},
-
-		{
-			"title": "30 Días de Superación Personal ",
-			"href": "",
-			"image": "https://i.pinimg.com/236x/16/ac/98/16ac98ed8b321efab9dd94bacff9ec22.jpg",
-			"message": "- Programa de audio "
+			"message": "Curso completo para HOMBRES",
+			"flechita": true,
+			"divider": "Socials"
 		}
 	],
 	"socials": [
 		{
-			"title": "youtube",
-			"href": "https://twitter.com/juanlopezdev"
+			"title": "Youtube",
+			"href": "",
+			"image": "https://img.icons8.com/color/96/000000/youtube-play.png"
 		},
 		{
-			"title": "tiktok",
-			"href": "https://youtube.com/juanlopezdev"
+			"title": "Tiktok",
+			"href": "",
+
+			"image": "https://img.icons8.com/ios/50/null/tiktok--v1.png"
 		},
 		{
-			"title": "instagram",
-			"href": "https://instagram.com/juanlopezdev"
+			"title": "Instagram",
+			"href": "",
+			"image": "https://img.icons8.com/color-glass/96/null/instagram-new.png"
 		},
 		{
-			"title": "telegram",
-			"href": "https://telegram.com/juanlopezdev"
-		},
-		{
-			"title": "tiktok",
-			"href": "https://youtube.com/juanlopezdev"
+			"title": "Telegram",
+			"href": "",
+			"image": "https://img.icons8.com/color/96/null/telegram-app--v1.png"
 		}
 	]
 }

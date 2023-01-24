@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 body {
-	background: linear-gradient(-50deg, #212121, #c70039);
-	background-size: 100% 100%;
+	background: #181818;
 	height: 100vh;
 }
 
 ::-webkit-scrollbar {
 	width: 10px;
-	color: #c70039;
+	color: #fff;
 	transition: all 0.4s ease;
 }
 ::-webkit-scrollbar-thumb {
-	background: #c70039;
+	background: #fff;
 	border-radius: 4px;
 	width: 4px;
 	transition: all 0.4s ease;
@@ -29,4 +28,12 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
 	margin: 0;
+}
+
+.image-cropper {
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	display: inline-block;
+	max-width: 100%;
 }

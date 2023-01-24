@@ -1,14 +1,8 @@
 import Image from "next/image";
 import data from "../../data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	TiktokIcon,
-	TwitterIcon,
-	InstagramIcon,
-	SpotifyIcon,
-	YoutubeIcon,
-	TelegramIcon,
-} from "../components/social";
+
+import Typewriter from "typewriter-effect";
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 interface data {
@@ -16,6 +10,7 @@ interface data {
 	avatar: string;
 	links: Link[];
 	socials: Social[];
+	flechita?: boolean;
 }
 
 interface Link {
@@ -24,6 +19,7 @@ interface Link {
 	image?: string;
 	message: string;
 	space?: boolean;
+	flechita?: boolean;
 }
 
 interface Social {
@@ -31,7 +27,7 @@ interface Social {
 	title: string;
 }
 
-function LinkCard({
+function Social({
 	href,
 	title,
 	image,
@@ -49,13 +45,25 @@ function LinkCard({
 			href={href}
 			target="_blank"
 			rel="noopener noreferrer"
-			className="flex items-center  p-1 w-full rounded-sm hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl"
+			className={`flex items-center  p-1 w-full rounded-sm hover:scale-105 transition-all whitespace-normal ${
+				title === "Youtube"
+					? "bg-[#DB4141]"
+					: title === "Tiktok"
+					? "bg-[#fff]"
+					: title === "Instagram"
+					? "bg-[#F55376]"
+					: title === "Telegram"
+					? "bg-[#29B6F6]"
+					: title === "Tiktok"
+					? "bg-slate-800"
+					: "bg-gray-100"
+			}  mb-3 max-w-3xl`}
 		>
-			<div className="flex text-center items-center justify-center w-full">
-				<div className="w-14 h-12  ">
+			<div className="flex text-center items-center  justify-between w-full">
+				<div className=" h-12 relative p-0 flex-grow-0  flex items-center ">
 					{image && (
 						<Image
-							className="rounded-md"
+							className="rounded-md inline-block w-[42px] min-w-[42px]"
 							alt={title}
 							src={image}
 							width={100}
@@ -63,63 +71,145 @@ function LinkCard({
 						/>
 					)}
 				</div>
-				<div className="flex justify-center items-center flex-col w-full">
-					<h1 className=" font-semibold  text-gray-700 text-lg ">{title}</h1>
-					<p className=" text-gray-700 text-sm">{message}</p>
+				<div className="flex justify-center items-center flex-col w-full flex-grow-[1] ">
+					<h1
+						className={` font-bold   ${
+							title === "Tiktok" ? "text-black" : "text-white"
+						}  text-lg `}
+					>
+						{title}
+					</h1>
+				</div>
+				<div className=" h-12 relative p-0 flex-grow-0  flex items-center ">
+					{image && (
+						<Image
+							className="rounded-md inline-block w-[42px] min-w-[42px]"
+							alt={title}
+							src={image}
+							width={100}
+							height={100}
+						/>
+					)}
 				</div>
 			</div>
-			{space && (
-				<div>
-					Este div se mostrará si la respuesta del back es "space": "true"
-				</div>
-			)}
 		</a>
 	);
 }
 
-export default function Home() {
+function LinkCard({
+	href,
+	title,
+	image,
+	message,
+	space,
+	flechita,
+}: {
+	href: string;
+	title: string;
+	image?: string;
+	message?: string;
+	space?: boolean;
+	flechita?: boolean;
+}) {
+	return (
+		<a
+			href={href}
+			target="_blank"
+			rel="noopener noreferrer"
+			className="flex items-center  w-full rounded-sm hover:scale-105 transition-all bg-gray-100 mb-3 max-w-3xl"
+		>
+			<div className="flex text-center items-center  justify-between w-full">
+				<div className="h-10 relative p-2 flex-grow-0  flex items-center">
+					{image && (
+						<Image
+							className="rounded-md"
+							alt={title}
+							src={image}
+							width={50}
+							height={100}
+						/>
+					)}
+				</div>
+				<div className="flex justify-center items-center flex-col w-full flex-grow-[1] p-2">
+					<h1 className=" font-semibold  text-gray-700 text-lg ">{title}</h1>
+					<p className=" text-gray-700 text-sm">{message}</p>
+				</div>
+				<div className="h-10 relative p-2 flex-grow-0  flex items-center">
+					{image && (
+						<Image
+							className="rounded-md"
+							alt={title}
+							src={image}
+							width={50}
+							height={100}
+						/>
+					)}
+				</div>
+			</div>
+		</a>
+	);
+}
+
+export default function Home({
+	href,
+	title,
+	image,
+	message,
+	space,
+	flechita,
+}: {
+	href: string;
+	title: string;
+	image?: string;
+	message?: string;
+	space?: boolean;
+	flechita?: boolean;
+}) {
 	return (
 		<>
-			<div className="flex  items-center flex-col mx-auto w-full justify-center mt-16 px-8 ">
+			<div className="flex text-center items-center flex-col mx-auto w-full justify-center mt-12   ">
 				<Image
 					priority
-					className="rounded-full"
+					className=" border-4 image-cropper"
 					alt={data.name}
 					src={data.avatar}
-					width={250}
-					height={250}
+					width={120}
+					height={120}
 				/>
-				<h1 className="font-bold mt-4 mb-8 text-3xl text-white">{data.name}</h1>
+				<h1 className="font-bold mt-2 mb-2 text-3xl text-white">{data.name}</h1>
+				<p className=" text-xl font-mono text-green-600  text-bold mb-4">
+					<Typewriter
+						options={{
+							strings: [
+								"Despierta, Elegido.",
+								"La Matrix te tiene.",
+								"Desliza hacia abajo.",
+								"*Toc Toc*",
+								"Abre Los Ojos.",
+								"Recupera tu masculinidad.",
+								"Vuelvete atractivo.",
+								"Supera a tu Ex.",
+								"Tomate la pildora roja.",
+							],
+							autoStart: true,
+							loop: true,
+							delay: 75,
+						}}
+					/>
+				</p>
 				{data.links.map((link) => (
 					<LinkCard key={link.href} {...link} />
 				))}
-				<div className="flex items-center gap-4 mt-8 text-white">
-					{data.socials.map((social) => (
-						<a
-							aria-label={`${social.title} link`}
-							key={social.href}
-							href={social.href}
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{social.href.includes("twitter") ? (
-								<TwitterIcon />
-							) : social.href.includes("instagram") ? (
-								<InstagramIcon />
-							) : null}
-							{social.href.includes("spotify") ? (
-								<SpotifyIcon />
-							) : social.href.includes("youtube") ? (
-								<YoutubeIcon />
-							) : null}
-							{social.href.includes("telegram") ? (
-								<TelegramIcon />
-							) : social.href.includes("tiktok") ? (
-								<TiktokIcon />
-							) : null}
-						</a>
-					))}
+				<div
+					className={` flex items-center  p-1 w-full rounded-sm  bg-gray-100 mb-3 max-w-[30px] max-h-[0] ${
+						flechita === true ? "none" : "flex"
+					}  text-lg `}
+				>
+					{/* <FontAwesomeIcon	icon={faCoffee} /> */}
 				</div>
+				{data.socials.map((link) => (
+					<Social key={link.href} {...link} />
+				))}
 			</div>
 		</>
 	);
