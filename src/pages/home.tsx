@@ -17,48 +17,45 @@ export default function Home() {
 						<link rel="icon" href="/favicon.ico" />
 					</Head>
 
-					<div>
-						<div className="navbar">
-							<nav id="navegador">
+					<section className="bg-slate-100 my-5">
+						<div className=" ">
+							<nav>
 								<div>
 									<a href="index.html"></a>
 								</div>
-								<input type="checkbox" id="check"></input>
-								<label className="bar-btn">
+								<label className="">
 									<i className="fa-solid fa-bars"></i>
 								</label>
-								{/* <ul className="nav-menu">
-								<li>
-									<a className="active" href="index.html">
-										INICIO
-									</a>
-								</li>
-								<li>
-									<a href="aboutus.html">DESCUBREME</a>
-								</li>
+								<ul className="nav-menu">
+									<li>
+										<a className="active" href="index.html">
+											INICIO
+										</a>
+									</li>
+									<li>
+										<a href="aboutus.html">DESCUBREME</a>
+									</li>
 
-								<li>
-									<a href="https://open.spotify.com/show/02uUmZEKDXD5L61AYFkohu?si=6371898db55043d0">
-										PODCAST
-									</a>
-								</li>
-								<li>
-									<a href="mentorias.html">MENTORIAS</a>
-								</li>
-							</ul> */}
+									<li>
+										<a href="https://open.spotify.com/show/02uUmZEKDXD5L61AYFkohu?si=6371898db55043d0">
+											PODCAST
+										</a>
+									</li>
+									<li>
+										<a href="mentorias.html">MENTORIAS</a>
+									</li>
+								</ul>
 							</nav>
-
-							<div id="divinicio"></div>
 						</div>
-					</div>
+					</section>
 
-					<section id="uppercontainer">
-						<section id="hero">
+					<section className="bg-sky-600 my-5">
+						<section id="">
 							<h2>
-								Escuela <span className="color">Red Pill</span>
+								Escuela <span className="">Red Pill</span>
 							</h2>
 							<h3>by Juan lopez</h3>
-							<div id="secondline">
+							<div id="">
 								<div className="text-bold text-green-500">
 									<Typewriter
 										options={{
@@ -83,14 +80,14 @@ export default function Home() {
 						</section>
 					</section>
 
-					<section id="linktree">
-						<div className="container">
-							<div className="head__section">
+					<section className="bg-slate-600 my-5">
+						<div>
+							<div className="">
 								<p>Psicólogo profesional y freelancer.</p>
 								<p>Descubrelo</p>
-								<div className="arrow bounce"></div>
+								<div className=""></div>
 
-								<ul className="social_header">
+								<ul className="">
 									<a href="https://t.me/escuelaredpill">
 										{" "}
 										<li></li>
@@ -102,30 +99,30 @@ export default function Home() {
 									</a>
 								</ul>
 							</div>
-							<div className="social__links">
-								<ul id="item">
-									<li className="patreon">
+							<div className="">
+								<ul id="">
+									<li className="">
 										<a href="mentorias.html">
 											<span>
 												<p>MENTORIAS Y CONSULTAS</p>
 											</span>
 										</a>
 									</li>
-									<li className="youtube">
+									<li className="">
 										<a href="https://www.youtube.com/channel/UCKsfHuc4kXMvUuiHRX3jdwA">
 											<span>
 												<p>YOUTUBE</p>
 											</span>
 										</a>
 									</li>
-									<li className="spotify">
+									<li className="">
 										<a href="">
 											<span>
 												<p>SPOTIFY</p>
 											</span>
 										</a>
 									</li>
-									<li className="Article">
+									<li className="">
 										<a href="https://blog.drjuanlopez.com">
 											<i className="fa-solid fa-newspaper"></i>
 											<span>
@@ -134,7 +131,7 @@ export default function Home() {
 										</a>
 									</li>
 
-									<li className="Team">
+									<li className="">
 										<a href="aboutus.html">
 											<span>
 												<p>NOSOTROS</p>
@@ -145,7 +142,8 @@ export default function Home() {
 							</div>
 						</div>
 					</section>
-					<section id="cards-1">
+
+					<section className="bg-slate-200 my-5">
 						<article>
 							<div>
 								<h1>REINVINDICACION MASCULINA</h1>
@@ -173,97 +171,72 @@ export default function Home() {
 							</div>
 						</article>
 					</section>
-					<div className="man-container"></div>
-					<section id="bottom">
+					<div className=""></div>
+					<section className="bg-purple-400 my-5">
 						<form action="mentorias.html">
 							<button type="submit">ADQUIERE TU MENTORIA</button>
 						</form>
 					</section>
 				</section>
 
-				<div className="ultimopodcast">
-					<div className="testimonials3">
-						<div className="tittle3">
+				<section className="bg-purple-400 my-5">
+					<div className="">
+						<div className="">
 							<h1>Ultimos Podcast</h1>
-							<div className="border3"></div>
+							<div className=""></div>
 						</div>
-						<div className="inner3">
-							<div className="row3">
-								<div className="col3">
-									<div className="testimonial3"></div>
+						<div className="">
+							<div className="">
+								<div className="">
+									<div className=""></div>
 								</div>
 
-								<div className="col3">
-									<div className="testimonial3"></div>
+								<div className="">
+									<div className=""></div>
 								</div>
 
-								<div className="col3">
-									<div className="testimonial3"></div>
+								<div className="">
+									<div className=""></div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<div className="testimonials4">
-					<div className="tittle4">
+				<section className="bg-orange-500 my-5">
+					<div className="">
 						<h1>Ultimos Videos</h1>
-						<div className="border4"></div>
+						<div className=""></div>
 					</div>
-					<div className="inner4">
-						<div className="row4">
-							<div className="col4">
-								<div className="testimonial4">
-									<iframe
-										id="link"
-										width="350"
-										height="250"
-										title="YouTube video player"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									></iframe>
-								</div>
+					<div className="">
+						<div className="">
+							<div className="">
+								<div className=""></div>
 							</div>
 
-							<div className="col4">
-								<div className="testimonial4">
-									<iframe
-										id="link2"
-										width="350"
-										height="250"
-										title="YouTube video player"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									></iframe>
-								</div>
+							<div className="">
+								<div className=""></div>
 							</div>
 
-							<div className="col4">
-								<div className="testimonial4">
-									<iframe
-										id="link3"
-										width="350"
-										height="250"
-										src=""
-										title="YouTube video player"
-										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									></iframe>
-								</div>
+							<div className="">
+								<div className=""></div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 
-				<div className="testimonials5">
-					<div className="tittle5">
+				<div className="bg-cyan-400 my-5">
+					<div className="">
 						<h1>Ultimos Articulos</h1>
-						<div className="border5"></div>
+						<div className=""></div>
 					</div>
-					<div className="inner5">
-						<div className="row5">
-							<div className="col5">
+					<div className="">
+						<div className="">
+							<div className="">
 								<a href="https://blogredpill.jetpage.site/blog/el-porqu-te-dejan-las-mujeres-la-betaizacion">
-									<div className="testimonial5">
-										<div className="imagen1"></div>
-										<div className="name5">
+									<div className="">
+										<div className=""></div>
+										<div className="">
 											El porque TE DEJAN LAS MUJERES.. LA BETAIZACION.
 										</div>
 
@@ -272,12 +245,12 @@ export default function Home() {
 								</a>
 							</div>
 
-							<div className="col5">
+							<div className="">
 								<a href="https://blogredpill.jetpage.site/blog/pruebas-que-te-hacen-las-mujeres-shit-test">
-									<div className="testimonial5">
-										<div className="imagen2"></div>
+									<div className="">
+										<div className=""></div>
 									</div>
-									<div className="name5">
+									<div className="">
 										PRUEBAS que te hacen las MUJERES ..SHIT TEST
 									</div>
 
@@ -285,11 +258,11 @@ export default function Home() {
 								</a>
 							</div>
 
-							<div className="col5">
+							<div className="">
 								<a href="https://blogredpill.jetpage.site/blog/la-verdad-de-las-mujeres-hipergamia">
-									<div className="testimonial5">
-										<div className="imagen3"></div>
-										<div className="name5">
+									<div className="">
+										<div className=""></div>
+										<div className="">
 											LA VERDAD de las MUJERES.. HIPERGAMIA
 										</div>
 
@@ -301,17 +274,17 @@ export default function Home() {
 					</div>
 				</div>
 
-				<footer>
-					<div className="footer-content">
+				<footer className="bg-green-400 my-5">
+					<div className="">
 						<h3>
-							Escuela <span className="color">Red Pill</span>
+							Escuela <span className="">Red Pill</span>
 						</h3>
 						<p>
 							Este proyecto esta dirigido a aquellos hombres que no entienden
 							como relacionarse adecuadamente con el sexo femenino, se realizará
 							una serie de videos sobre las claves para una relación estable.
 						</p>
-						<ul className="socials">
+						<ul className="">
 							<li>
 								<a href="https://www.instagram.com/escuelaredpill/">
 									<i className="fa-brands fa-instagram"></i>
@@ -334,8 +307,8 @@ export default function Home() {
 							</li>
 						</ul>
 
-						<div className="footer-bottom">
-							<div className="copyright">
+						<div className="">
+							<div className="">
 								<p>
 									Copyright ©{" "}
 									<a href="https://github.com/NevercomeG">
@@ -343,10 +316,10 @@ export default function Home() {
 									</a>
 								</p>
 							</div>
-							<nav className="footer-menu">
-								<ul className="f-menu">
+							<nav className="">
+								<ul className="">
 									<li>
-										<a href="#navegador">
+										<a href="">
 											<i className="fa-solid fa-arrow-up"></i>
 										</a>
 									</li>
