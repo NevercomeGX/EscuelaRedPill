@@ -1,8 +1,5 @@
 import Image from "next/image";
 import data from "../../data.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library, icon } from "@fortawesome/fontawesome-svg-core";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 import Typewriter from "typewriter-effect";
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
