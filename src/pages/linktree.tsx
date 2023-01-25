@@ -323,13 +323,6 @@ export default function Home({
 						id="embedPlayer"
 						src="https://embed.podcasts.apple.com/us/podcast/la-verdad-sobre-las-mujeres-escuela-redpill/id1667721683?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto"
 						height="450px"
-						frameborder="0"
-						sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-						allow="autoplay ; encrypted-media; clipboard-write"
-						bis_size='{"x":310,"y":1756,"w":660,"h":450,"abs_x":310,"abs_y":1756}'
-						bis_id="fr_t8h9ajtvrih7qlutv30msb"
-						bis_depth="0"
-						bis_chainid="1"
 					></iframe>
 				</div>
 			</body>
