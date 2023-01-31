@@ -72,6 +72,7 @@ export default function Consulting() {
 											style={{ fontSize: 30, color: "#22a3fe" }}
 										/>
 									</a>
+
 									<a
 										href="https://www.linkedin.com/in/andresvernazza/"
 										className=" inline-block float-none mt-0 mx-[5px] mb-[5px] "
