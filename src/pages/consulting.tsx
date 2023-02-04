@@ -21,7 +21,7 @@ export default function Consulting() {
 			<section>
 				<div className=" m-0 p-0 relative leading-none ">
 					<Image
-						className="align-middle"
+						className="align-middle "
 						src="/assets/banner.jpg"
 						alt=""
 						height={300}
@@ -31,9 +31,9 @@ export default function Consulting() {
 				</div>
 
 				{/* content */}
-				<div className=" w-[1170px] ml-auto mr-auto pr-[15px] pl-[15px] container ">
+				<div className=" lg:w-[1170px] ml-auto mr-auto pr-[15px] pl-[15px] container ">
 					<div className="row">
-						<aside className=" float-left w-1/4  min-h-[1px] pl-[15px] pr-[15px] relative block ">
+						<aside className=" float-left w-1/4  min-h-[1px] pl-[15px] pr-[15px] relative lg:block md:block hidden ">
 							{/* sidebar */}
 							<div className=" bg-[#f2f2f2] m-0 relative z-[9] px-[10px] pt-[125px] pb-[10px] ">
 								<figure className=" left-0 m-0 py-0 px-[10px] absolute text-center align-middle justify-center flex top-[-105px] w-full ">
@@ -129,13 +129,13 @@ export default function Consulting() {
 							</div>
 						</aside>
 
-						<aside className=" w-3/4 float-left  min-h-[1px] px-[15px] relative">
+						<aside className=" w-full md:w-3/4 lg:w-3/4 float-left  min-h-[1px] px-[15px] relative">
 							{/* main content */}
 							<div className=" bg-[#fafafa] m-0 p-0 relative">
 								{/*title*/}
-								<div className="shadow p-4 rounded-br-sm rounded-bl-sm relative z-[9] pt-[15px] pr-[15px] pb-[15px] pl-[30px] mt-0 mr-0 mb-0 ml-[-30px]">
+								<div className="shadow p-4 rounded-br-sm rounded-bl-sm relative z-[9] px-[40px] lg:pt-[15px] lg:pr-[15px] lg:pb-[15px] lg:pl-[30px] md:pt-[15px] md:pr-[15px] md:pb-[15px] md:pl-[30px]  mt-0 mr-0 mb-0 ml-[-30px]">
 									<div className=" row">
-										<div className="w-full float-left min-[1px] pl-[15px] pr-[15px] relative contents after:clear-both a">
+										<div className=" w-full float-left min-[1px] pl-[15px] pr-[15px] relative contents after:clear-both ">
 											<h2 className=" break-words text-[#0c1827] text-[35px] font-[700] tracking-normal leading-[37px] m-0 pt-0 px-0 pb-[10px] ">
 												Juan Lopez
 											</h2>
@@ -148,13 +148,9 @@ export default function Consulting() {
 										</div>
 									</div>
 								</div>
-								{/*  T arriba | R derecha | B abajo |  L izquierda 
-									padding: 5px 1em 0 2em; */}
-
-								{/* main content */}
 								<div className="aboutme">
 									<div className="row">
-										<figure className=" leading-[0px] w-1/12 float-left min-h-[1px] px-[15px] relative m-0">
+										<figure className=" leading-[0px] w-1/12  float-left min-h-[1px] lg:px-[15px] relative m-0">
 											<svg></svg>
 										</figure>
 										<article className=" w-11/12 float-left min-h-[1px] px-[15px] relative ">
