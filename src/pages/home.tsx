@@ -16,7 +16,6 @@ export default function Home() {
 						/>
 						<link rel="icon" href="/favicon.ico" />
 					</Head>
-
 					<section className="bg-slate-100 my-5">
 						<div className=" ">
 							<nav>

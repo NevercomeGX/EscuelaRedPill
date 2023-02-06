@@ -4,7 +4,7 @@
 	"maincard": [
 		{
 			"title": "Taller gratuito",
-			"href": "",
+			"href": "/consulting",
 			"image": "/assets/pngwing.png",
 			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
 		}
@@ -12,14 +12,14 @@
 	"links": [
 		{
 			"title": "Assesoria Emocional",
-			"href": "",
+			"href": "/consultas",
 			"image": "/assets/pngwing2.png",
 			"message": "Curso completo para MUJERES"
 		},
 
 		{
 			"title": "Taller de habilidades sociales",
-			"href": "",
+			"href": "/home",
 
 			"image": "/assets/pngwing3.png",
 			"message": "Curso completo para HOMBRES"
