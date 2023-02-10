@@ -1,5 +1,4 @@
-import Hero from "@components/Consulting/Hero/Hero";
-import NavBar from "../components/Consulting/NavigationBar/NavBar";
+import NavBar from "components/Consulting/NavigationBar/NavBar";
 
 const ContactForm = () => {
 	return (

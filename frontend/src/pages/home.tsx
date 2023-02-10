@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
