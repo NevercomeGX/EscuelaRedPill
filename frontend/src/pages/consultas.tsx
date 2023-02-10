@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Hero from "../components/Consulting/Hero/Hero";
-import Slider from "../components/Consulting/Slider/Slider";
-import { SliderData } from "../components/Consulting/Slider/SliderData";
-import Instagram from "../components/Consulting/InstagramGallery/Instagram";
-import Portfolio from "../components/Consulting/Portfolio/Portfolio";
-import Contact from "../components/Consulting/Contact/Contact";
+// import Slider from "../components/Consulting/Slider/Slider";
+// import { SliderData } from "../components/Consulting/Slider/SliderData";
+// import Instagram from "../components/Consulting/InstagramGallery/Instagram";
+// import Portfolio from "../components/Consulting/Portfolio/Portfolio";
+// import Contact from "../components/Consulting/Contact/Contact";
 import NavBar from "../components/Consulting/NavigationBar/NavBar";
 
 const Home: NextPage = () => {
@@ -20,7 +20,10 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<NavBar />
-			<Hero heading="Let's go jogging" message="Find your road" />
+			<Hero
+				heading="DESCARGA MI EBOOK GRATIS"
+				message="15 RED FLAGS FEMENINAS QUE DEBES EVITAR A TODA COSTA"
+			/>
 			{/* <Slider slides={SliderData} /> */}
 			{/* <Instagram />
 			<Portfolio />

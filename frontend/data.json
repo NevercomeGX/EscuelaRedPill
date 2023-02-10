@@ -56,5 +56,36 @@
 			"href": "",
 			"image": "https://img.icons8.com/color/96/null/telegram-app--v1.png"
 		}
+	],
+	"Navbar": [
+		{
+			"title": "Home",
+			"href": "/home"
+		},
+		{
+			"title": "Consultas",
+			"href": "/consultas"
+		},
+		{
+			"title": "Consulting",
+			"href": "/consulting"
+		},
+		{
+			"title": "Articulos",
+			"href": "/articulos"
+		},
+		{
+			"title": "Contacto",
+			"href": "/contacto"
+		},
+		{
+			"title": "About",
+			"href": "/about"
+		}
+	],
+	"footer2": [
+		{
+			"message": "Made with ❤️ by Juan López"
+		}
 	]
 }
