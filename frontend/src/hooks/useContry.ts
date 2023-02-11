@@ -1,9 +1,9 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
+
 import { ICountry } from "../models/countryData";
 
-import axios from "axios";
-
-export const useContry = ({}: ICountry) => {
+export const useContry = () => {
 	const [code, setCode] = useState<ICountry[]>([]);
 	const [error, setError] = useState(null);
 	const params = new URLSearchParams();
