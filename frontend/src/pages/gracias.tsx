@@ -1,8 +1,10 @@
-import NavBar from '@/components/Consulting/NavigationBar/NavBar';
+import Seo from '@/components/Global/Seo';
+import NavBar from '@/components/Semilla/NavigationBar/NavBar';
 
 const ContactForm = () => {
   return (
     <main>
+      <Seo templateTitle='Gracias por confirmar tu correo' />
       <NavBar />
       <div className='mb-12 flex   h-screen items-center justify-center bg-black/70 pt-16  text-center '>
         <div className=''>

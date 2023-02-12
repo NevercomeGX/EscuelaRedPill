@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { RiAlarmWarningFill } from 'react-icons/ri';
 
-import Layout from '@/components/Infoproduct/layout/Layout';
-import ArrowLink from '@/components/Infoproduct/links/ArrowLink';
-import Seo from '@/components/Infoproduct/Seo';
+import Layout from '@/components/Global/layout/Layout';
+import ArrowLink from '@/components/Global/links/ArrowLink';
+import Seo from '@/components/Global/Seo';
 
 export default function NotFoundPage() {
   return (
     <Layout>
-      <Seo templateTitle='Not Found' />
+      <Seo templateTitle='ups... 404' />
 
       <main>
         <section className='bg-white'>

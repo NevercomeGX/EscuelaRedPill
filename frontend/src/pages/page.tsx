@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import Layout from '@/components/Infoproduct/layout/Layout';
-import ArrowLink from '@/components/Infoproduct/links/ArrowLink';
-import ButtonLink from '@/components/Infoproduct/links/ButtonLink';
-import UnderlineLink from '@/components/Infoproduct/links/UnderlineLink';
-import UnstyledLink from '@/components/Infoproduct/links/UnstyledLink';
-import Seo from '@/components/Infoproduct/Seo';
+import Layout from '@/components/Global/layout/Layout';
+import ArrowLink from '@/components/Global/links/ArrowLink';
+import ButtonLink from '@/components/Global/links/ButtonLink';
+import UnderlineLink from '@/components/Global/links/UnderlineLink';
+import UnstyledLink from '@/components/Global/links/UnstyledLink';
+import Seo from '@/components/Global/Seo';
 
 /**
  * SVGR Support

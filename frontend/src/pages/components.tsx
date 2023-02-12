@@ -10,18 +10,18 @@ import {
   HiPlus,
 } from 'react-icons/hi';
 
-import Button from '@/components/Infoproduct/buttons/Button';
-import IconButton from '@/components/Infoproduct/buttons/IconButton';
-import TextButton from '@/components/Infoproduct/buttons/TextButton';
-import Layout from '@/components/Infoproduct/layout/Layout';
-import ArrowLink from '@/components/Infoproduct/links/ArrowLink';
-import ButtonLink from '@/components/Infoproduct/links/ButtonLink';
-import PrimaryLink from '@/components/Infoproduct/links/PrimaryLink';
-import UnderlineLink from '@/components/Infoproduct/links/UnderlineLink';
-import UnstyledLink from '@/components/Infoproduct/links/UnstyledLink';
-import NextImage from '@/components/Infoproduct/NextImage';
-import Seo from '@/components/Infoproduct/Seo';
-import Skeleton from '@/components/Infoproduct/Skeleton';
+import Button from '@/components/Global/buttons/Button';
+import IconButton from '@/components/Global/buttons/IconButton';
+import TextButton from '@/components/Global/buttons/TextButton';
+import Layout from '@/components/Global/layout/Layout';
+import ArrowLink from '@/components/Global/links/ArrowLink';
+import ButtonLink from '@/components/Global/links/ButtonLink';
+import PrimaryLink from '@/components/Global/links/PrimaryLink';
+import UnderlineLink from '@/components/Global/links/UnderlineLink';
+import UnstyledLink from '@/components/Global/links/UnstyledLink';
+import NextImage from '@/components/Global/NextImage';
+import Seo from '@/components/Global/Seo';
+import Skeleton from '@/components/Global/Skeleton';
 
 type Color = (typeof colorList)[number];
 

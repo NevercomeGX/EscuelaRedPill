@@ -5,7 +5,7 @@ import clsxm from '@/lib/clsxm';
 
 import UnstyledLink, {
   UnstyledLinkProps,
-} from '@/components/Infoproduct/links/UnstyledLink';
+} from '@/components/Global/links/UnstyledLink';
 
 const ButtonLinkVariant = [
   'primary',

@@ -3,30 +3,30 @@
 	"avatar": "/assets/IMG_8642.png",
 	"maincard": [
 		{
-			"title": "Taller gratuito",
-			"href": "/consulting",
+			"title": "Consultas",
+			"href": "/consultas",
 			"image": "/assets/pngwing.png",
 			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
 		}
 	],
 	"links": [
 		{
-			"title": "Assesoria Emocional",
-			"href": "/consultas",
+			"title": "Semilla",
+			"href": "/semilla",
 			"image": "/assets/pngwing2.png",
 			"message": "Curso completo para MUJERES"
 		},
 
 		{
-			"title": "Taller de habilidades sociales",
-			"href": "/home",
+			"title": "Walter Riso",
+			"href": "/infoproducto",
 
 			"image": "/assets/pngwing3.png",
 			"message": "Curso completo para HOMBRES"
 		},
 
 		{
-			"title": "Articulos",
+			"title": "Empty",
 			"href": "",
 			"image": "/assets/agent-smith.png",
 			"message": "Curso completo para HOMBRES",

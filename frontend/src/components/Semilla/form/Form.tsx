@@ -121,7 +121,7 @@ const ContactForm = () => {
         </label>
       </div>
       {acceptedTerms && (
-        <Link href='/exito' passHref>
+        <Link href='/gracias' passHref>
           <button className='my-4 w-96 rounded-md border px-8 py-2'>
             Here
           </button>

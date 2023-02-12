@@ -1,6 +1,9 @@
 import data from 'data.json';
 import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
+
+import Seo from '@/components/Global/Seo';
+
 // import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 <script
   async
@@ -214,6 +217,7 @@ export default function Home({
 }) {
   return (
     <>
+      <Seo templateTitle='Linktree' />
       <body className='h-full bg-[#181818]'>
         <div className='mx-auto mt-12 flex w-full flex-col items-center justify-center px-4 text-center '>
           <Image
