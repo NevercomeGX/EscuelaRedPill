@@ -15,7 +15,8 @@
 		"format": "prettier -w .",
 		"format:check": "prettier -c .",
 		"postbuild": "next-sitemap --config next-sitemap.config.js",
-		"prepare": "cd .. && husky install"
+		"prepare": "cd .. && husky install",
+		"stop-pm2": "pm2 stop all"
 	},
 	"dependencies": {
 		"@emotion/css": "^11.10.5",
