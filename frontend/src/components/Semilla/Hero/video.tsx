@@ -1,6 +1,10 @@
 import { useState } from 'react';
 
-export default function Video({ video }) {
+interface link {
+  video: string;
+}
+
+export default function Video({ video }: link) {
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <div className=' mx-auto w-4/5  max-w-3xl overflow-hidden lg:mb-20'>
