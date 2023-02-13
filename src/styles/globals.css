@@ -24,10 +24,6 @@ body {
   font-family: 'Raleway';
 }
 
-.custom-img {
-  background-image: url('https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif');
-}
-
 ::-webkit-scrollbar {
   width: 10px;
   color: #c70039;
