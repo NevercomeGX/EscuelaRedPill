@@ -3,33 +3,33 @@
 	"avatar": "/assets/IMG_8642.png",
 	"maincard": [
 		{
-			"title": "Consultas",
+			"title": "lorem",
 			"href": "/consultas",
 			"image": "/assets/pngwing.png",
-			"message": "Consejería de Superación Personal - Relaciones de Pareja | Emprender | Resolver Conflictos"
+			"message": "lorem"
 		}
 	],
 	"links": [
 		{
-			"title": "Semilla",
+			"title": "lorem",
 			"href": "/semilla",
 			"image": "/assets/pngwing2.png",
-			"message": "Curso completo para MUJERES"
+			"message": "lorem"
 		},
 
 		{
-			"title": "Walter Riso",
+			"title": "lorem",
 			"href": "/test",
 
 			"image": "/assets/pngwing3.png",
-			"message": "Curso completo para HOMBRES"
+			"message": "lorem"
 		},
 
 		{
-			"title": "Empty",
+			"title": "lorem",
 			"href": "",
 			"image": "/assets/agent-smith.png",
-			"message": "Curso completo para HOMBRES",
+			"message": "lorem",
 			"flechita": true,
 			"divider": "Socials"
 		}

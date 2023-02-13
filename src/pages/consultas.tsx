@@ -9,17 +9,80 @@ import {
   faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import React, { useState } from 'react';
+import '@fontsource/raleway';
 
 import Seo from '@/components/Global/Seo';
-import NavBar from '@/components/Semilla/NavigationBar/NavBar';
-
 export default function Consulting() {
+  const [nav, setNav] = useState(false);
+  // const [color, setColor] = useState("transparent");
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <>
-      <Seo />
+      <Seo templateTitle='Consultas' />
       <section>
         <div className=' relative m-0 pb-32 leading-none md:pb-64 '>
-          <NavBar />
+          <div className='backdrop fixed left-0 top-0 z-10 w-full bg-[#212121]/60 backdrop-brightness-50 duration-300  ease-in  '>
+            <div className='m-auto flex max-w-[1240px] items-center justify-between text-white'>
+              {/* Logo */}
+              {/* <Link href='/'>
+          <h1 style={{ color: `${textColor}` }} className='text-4xl font-bold'>
+            Escuela <span style={{ color: `${Redpill}` }}> Red Pill </span>
+          </h1>
+        </Link> */}
+              <div className='flex flex-1 flex-row items-center '>
+                <Link href='/'>
+                  <div className='flex items-center text-2xl font-medium text-indigo-500 dark:text-gray-100'>
+                    <span>
+                      <img
+                        src='/assets/pildora.png'
+                        alt='N'
+                        width='32'
+                        height='32'
+                        className='w-32'
+                      />
+                    </span>
+                  </div>
+                </Link>
+                <Link href='/'>
+                  <div className='flex flex-col  justify-center'>
+                    <span className=' text-lg'>
+                      Escuela{' '}
+                      <span className='font-bold text-[#c70039]'>
+                        {' '}
+                        Red Pill
+                      </span>
+                    </span>
+                    <span className='raleway text-xs italic'>
+                      by Juan López
+                    </span>
+                  </div>
+                </Link>
+              </div>
+
+              {/* Mobile Button */}
+              {/* <div onClick={handleNav} className='z-10 block sm:hidden'>
+                {nav ? (
+                  <AiOutlineClose size={20} />
+                ) : (
+                  <AiOutlineMenu size={20} />
+                )}
+              </div> */}
+              {/* Mobile Menu */}
+              {/* <div
+                className={
+                  nav
+                    ? 'absolute top-0 left-0 right-0 bottom-0 flex h-screen w-full items-center justify-center bg-[#212121]/90 text-center  backdrop-blur backdrop-brightness-50 duration-300 ease-in sm:hidden'
+                    : 'absolute top-0 left-[-100%] right-0 bottom-0 flex h-screen w-full items-center justify-center bg-[#212121]/90 text-center backdrop-blur  backdrop-brightness-50 duration-300 ease-in sm:hidden'
+                }
+              ></div> */}
+            </div>
+          </div>
         </div>
 
         {/* content */}
@@ -198,7 +261,7 @@ export default function Consulting() {
                       <article className=' relative float-left min-h-[1px] w-11/12 px-[15px] '>
                         <a href='https://www.paypal.com/paypalme/juxnsubs'>
                           <button className='my-4 justify-center rounded-md border border-[#212121] bg-[#33bfb3] px-8 py-2 text-center font-bold text-white hover:bg-[#33bfc9]'>
-                            Link de reserva
+                            RESERVA AHORA
                           </button>
                         </a>
                         <h3 className='m-0 px-0 pt-0 pb-[15px] text-[16px] font-[700] leading-[18px] text-[#0c1827] '>
