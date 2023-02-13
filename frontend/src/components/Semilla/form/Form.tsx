@@ -2,57 +2,40 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
-import Country from './country';
 import Container from '../container';
-
-// const BASE_URL = process.env.NEXT_PUBLIC_CODE;
-
-interface countrycode {
-  name: string;
-  dial_code: string;
-  code: string;
-}
-
 interface Props {
   heading: string;
   message: string;
 }
 
 const ContactForm = ({ heading, message }: Props) => {
-  const [error, setError] = useState('');
-  const router = useRouter();
-  const [selected, setSelected] = useState(Country[0].name);
   const [credentials, setCredentials] = useState({
     name: '',
     lastName: '',
     email: '',
+    country: '',
   });
 
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
-  const handleChange = (event: any) => {
-    setSelected(event.target.name);
-    console.log(selected);
-  };
-
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAcceptedTerms(e.target.checked);
   };
+
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // prevent the default form submission behavior
 
     // create a new user object with the form data
     try {
-      const newUser = await axios.post(
-        process.env.NEXT_PUBLIC_HOST + '/api/emails',
-        {
-          name: credentials.name,
-          lastName: credentials.lastName,
-          email: credentials.email,
-          selectedOption: selected,
-        }
-      );
+      axios.post(process.env.NEXT_PUBLIC_HOST + '/api/emails', {
+        name: credentials.name,
+        lastName: credentials.lastName,
+        email: credentials.email,
+        selectedOption: credentials.country,
+      });
+      router.push('/gracias');
     } catch (error) {
       //s
     }
@@ -82,6 +65,7 @@ const ContactForm = ({ heading, message }: Props) => {
                 name: e.target.value,
               })
             }
+            required
           />
           <br />
 
@@ -96,6 +80,7 @@ const ContactForm = ({ heading, message }: Props) => {
                 lastName: e.target.value,
               })
             }
+            required
           />
           <br />
           <input
@@ -109,9 +94,23 @@ const ContactForm = ({ heading, message }: Props) => {
                 email: e.target.value,
               })
             }
+            required
           />
           <br />
 
+          <input
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            placeholder='Pais'
+            type='text'
+            onChange={(e) =>
+              setCredentials({
+                ...credentials,
+                country: e.target.value,
+              })
+            }
+            required
+          />
+          {/* 
           <select
             className='form-control my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
             value={selected}
@@ -122,7 +121,7 @@ const ContactForm = ({ heading, message }: Props) => {
                 {Country.name}
               </option>
             ))}
-          </select>
+          </select> */}
           {/* <PhoneInput
 					placeholder="Enter phone number"
 					value={value}
@@ -156,7 +155,7 @@ const ContactForm = ({ heading, message }: Props) => {
               </span>
             </label>
           </div>
-          {acceptedTerms && (
+          {acceptedTerms ? (
             // <Link href='/gracias'>
             <button
               type='submit'
@@ -164,8 +163,8 @@ const ContactForm = ({ heading, message }: Props) => {
             >
               REGISTRATE GRATIS
             </button>
-            // </Link>
-          )}
+          ) : // </Link>
+          null}
         </form>
       </div>
     </Container>

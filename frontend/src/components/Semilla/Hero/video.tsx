@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Video() {
+export default function Video({ video }) {
   const [playVideo, setPlayVideo] = useState(false);
   return (
     <div className=' mx-auto w-4/5  max-w-3xl overflow-hidden lg:mb-20'>
@@ -12,7 +12,7 @@ export default function Video() {
           className='lg:ml-4'
           width='560'
           height='315'
-          src='https://www.youtube.com/embed/2x_Ot2zwYJQ'
+          src={video}
           title='YouTube video player'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           allowFullScreen
