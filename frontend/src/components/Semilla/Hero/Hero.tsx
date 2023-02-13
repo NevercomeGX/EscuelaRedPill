@@ -1,41 +1,19 @@
 import React from 'react';
 
+import Video from './video';
 import Form from '../form/Form';
 
-interface Props {
-  heading: string;
-  message: string;
-}
-
-const Hero = ({ heading, message }: Props) => {
+const Hero = () => {
   return (
-    <div className='mb-12 flex  h-screen items-center justify-center gap-32 bg-black/70 pt-16  text-center '>
-      <div className=''>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className='pointer-events: none; h-[800px] w-[800px]'
-        >
-          {' '}
-          <source
-            src='https://walter-riso.com/wp-content/themes/Writer-Custom-Theme-master/assets/video/BannerWalterRiso.mp4'
-            type='video/mp4'
-          />
-        </video>
-      </div>
+    <section className=' w-full'>
+      <div className='  flex flex-col items-center justify-center bg-black/70 pt-[10rem] pb-[2rem]  text-center lg:flex-row '>
+        <Video />
 
-      <div className='item z-[2] mt-[-10rem] flex flex-col justify-center gap-6 p-5 pt-32 text-white'>
-        <div className='text-center'>
-          <h2 className='text-5xl font-bold'>{heading}</h2>
-          <p className='py-5 text-xl'>{message}</p>
-        </div>
-        <div>
-          <Form />
+        <div className='flex flex-col items-center justify-center text-white'>
+          <Form heading='Taller gratuito ABC de la comunicación' message='' />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

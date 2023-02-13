@@ -30,7 +30,7 @@ export default function Video() {
           )}
           {playVideo && (
             <iframe
-              src='https://www.youtube.com/embed/H5BAorWyVuM'
+              src='https://www.youtube.com/embed/LHf2KqT3g4U'
               title='YouTube video player'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullScreen

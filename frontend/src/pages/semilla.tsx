@@ -1,7 +1,10 @@
 import type { NextPage } from 'next';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
 
+const Footer = dynamic(() => import('../components/Semilla/footer/footer'));
 import Seo from '@/components/Global/Seo';
+import Contenido from '@/components/Semilla/Contenido/Contenido';
 import Hero from '@/components/Semilla/Hero/Hero';
 import NavBar from '@/components/Semilla/NavigationBar/NavBar';
 
@@ -18,14 +21,10 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar />
-      <Hero
-        heading='DESCARGA MI EBOOK GRATIS'
-        message='15 RED FLAGS FEMENINAS QUE DEBES EVITAR A TODA COSTA'
-      />
+      <Hero />
       {/* <Slider slides={SliderData} /> */}
-      {/* <Instagram />
-			<Portfolio />
-			<Contact /> */}
+      <Contenido />
+      <Footer />
     </>
   );
 };

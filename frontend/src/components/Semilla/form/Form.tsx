@@ -1,7 +1,9 @@
-import Link from 'next/link';
+import axios from 'axios';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
-import countrycode from '../../../../codecontry.json';
+import Country from './country';
+import Container from '../container';
 
 // const BASE_URL = process.env.NEXT_PUBLIC_CODE;
 
@@ -11,123 +13,162 @@ interface countrycode {
   code: string;
 }
 
-const ContactForm = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  // const [phone, setPhone] = useState("");
-  // const [error, setError] = useState(null);
+interface Props {
+  heading: string;
+  message: string;
+}
+
+const ContactForm = ({ heading, message }: Props) => {
+  const [error, setError] = useState('');
+  const router = useRouter();
+  const [selected, setSelected] = useState(Country[0].name);
+  const [credentials, setCredentials] = useState({
+    name: '',
+    lastName: '',
+    email: '',
+  });
+
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
-  // const [selectedCountry, setSelectedCountry] = useState("");
-  // const [countryCodes, setCountryCodes] = useState([]);
-
-  // const [value, setValue] = useState("");
+  const handleChange = (event: any) => {
+    setSelected(event.target.name);
+    console.log(selected);
+  };
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAcceptedTerms(e.target.checked);
   };
-  // const phoneUtil = PhoneNumberUtil.getInstance();
 
-  // const handleCountryChange = (event: any) => {
-  // 	setSelectedCountry(event.target.value);
-  // };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault(); // prevent the default form submission behavior
 
-  // const handleSubmit = (event: any) => {
-  // 	event.preventDefault();
-  // 	try {
-  // 		const phoneNumber = phoneUtil.parse(phone, "US");
-  // 		if (!phoneUtil.isValidNumber(phoneNumber)) {
-  // 			throw new Error("Invalid phone number");
-  // 		}
-  // 		// Submit the form data
-  // 	} catch (err: any) {
-  // 		setError(err.message);
-  // 	}
-  // };
+    // create a new user object with the form data
+    try {
+      const newUser = await axios.post(
+        process.env.NEXT_PUBLIC_HOST + '/api/emails',
+        {
+          name: credentials.name,
+          lastName: credentials.lastName,
+          email: credentials.email,
+          selectedOption: selected,
+        }
+      );
+    } catch (error) {
+      //s
+    }
+  };
 
   return (
-    <form>
-      <input
-        className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
-        placeholder='Nombre'
-        type='text'
-        id='first-name'
-        value={firstName}
-        onChange={(event) => setFirstName(event.target.value)}
-      />
-      <br />
+    <Container>
+      <div className='w-full '>
+        <div className='text-center'>
+          <h2 className='text-5xl font-bold'>{heading}</h2>
+          <p className='py-5 text-xl'>{message}</p>
+        </div>
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            handleSubmit(event);
+          }}
+        >
+          <input
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            placeholder='Nombre'
+            type='text'
+            id='first-name'
+            onChange={(e) =>
+              setCredentials({
+                ...credentials,
+                name: e.target.value,
+              })
+            }
+          />
+          <br />
 
-      <input
-        className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
-        placeholder='Apellido'
-        type='text'
-        id='last-name'
-        value={lastName}
-        onChange={(event) => setLastName(event.target.value)}
-      />
-      <br />
-      <input
-        className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
-        placeholder='Email'
-        type='email'
-        id='email'
-        value={email}
-        onChange={(event) => setEmail(event.target.value)}
-      />
-      <br />
+          <input
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            placeholder='Apellido'
+            type='text'
+            id='last-name'
+            onChange={(e) =>
+              setCredentials({
+                ...credentials,
+                lastName: e.target.value,
+              })
+            }
+          />
+          <br />
+          <input
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            placeholder='Email'
+            type='email'
+            id='email'
+            onChange={(e) =>
+              setCredentials({
+                ...credentials,
+                email: e.target.value,
+              })
+            }
+          />
+          <br />
 
-      <select
-        placeholder='Selecciona Tu pais'
-        className='form-control my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
-        id='countryCode'
-      >
-        <option value=''>Selecciona tu Pais</option>
-        {countrycode.map((code) => (
-          <option key={code.name} value=''>
-            {code.name} ({code.dial_code})
-          </option>
-        ))}
-      </select>
-      {/* <PhoneInput
+          <select
+            className='form-control my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            value={selected}
+            onChange={handleChange}
+          >
+            {Country.map((Country) => (
+              <option key={Country.name} value={Country.name}>
+                {Country.name}
+              </option>
+            ))}
+          </select>
+          {/* <PhoneInput
 					placeholder="Enter phone number"
 					value={value}
 					onChange={event:Event}
 				/> */}
 
-      <div className='form-group'>
-        <input
-          type='text'
-          className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
-          id='phoneNumber'
-          placeholder='Numero de telefono'
-        />
+          {/* <div className='form-group'>
+          <input
+            type='text'
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
+            id='phoneNumber'
+            placeholder='Numero de telefono'
+          />
+        </div> */}
+          {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
+          <br />
+          <div className='flex w-full  flex-1 flex-col-reverse items-center justify-center py-10'>
+            <input
+              className='  min-h-[25px] min-w-[25px] flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white align-middle text-lg leading-normal'
+              type='checkbox'
+              id='terms'
+              onChange={handleCheckboxChange}
+              checked={acceptedTerms}
+            />
+            <label htmlFor='terms' className=' p-2'>
+              Acepto la{' '}
+              <span className='text-red-500'>
+                <a href='' className='items-center justify-center'>
+                  Política de Privacidad y Protección de Datos
+                </a>
+              </span>
+            </label>
+          </div>
+          {acceptedTerms && (
+            // <Link href='/gracias'>
+            <button
+              type='submit'
+              className='my-4 rounded-md border border-[#212121] bg-[#c70039] px-8 py-2 font-bold lg:w-96'
+            >
+              REGISTRATE GRATIS
+            </button>
+            // </Link>
+          )}
+        </form>
       </div>
-      {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
-      <br />
-      <div className='py-2'>
-        <input
-          type='checkbox'
-          id='terms'
-          onChange={handleCheckboxChange}
-          checked={acceptedTerms}
-        />
-        <label htmlFor='terms' className='p-2'>
-          Acepto la{' '}
-          <span className='text-red-500'>
-            {' '}
-            <a href=''> Política de Privacidad y Protección de Datos </a>{' '}
-          </span>
-        </label>
-      </div>
-      {acceptedTerms && (
-        <Link href='/gracias' passHref>
-          <button className='my-4 w-96 rounded-md border px-8 py-2'>
-            Here
-          </button>
-        </Link>
-      )}
-    </form>
+    </Container>
   );
 };
 

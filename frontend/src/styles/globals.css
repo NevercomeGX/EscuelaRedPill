@@ -20,24 +20,28 @@ body {
   overflow-x: hidden;
 }
 
+.Raleway {
+  font-family: 'Raleway';
+}
+
 .custom-img {
   background-image: url('https://i.pinimg.com/originals/80/79/f3/8079f35bd622625b4db763edfce6d026.gif');
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-  color: #fff;
+  color: #c70039;
   transition: all 0.4s ease;
 }
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: #c70039;
   border-radius: 4px;
   width: 4px;
   transition: all 0.4s ease;
 }
 ::-webkit-scrollbar-track {
-  background: #101010;
-  border-radius: 10px;
+  background: black;
+  border-radius: 2px;
   width: 10px;
 }
 

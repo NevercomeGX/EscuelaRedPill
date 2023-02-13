@@ -34,6 +34,7 @@ export default function Home() {
 
       <Navbar />
       <Hero />
+      <Video />
       <SectionTitle
         pretitle='Nextly Benefits'
         title=' Why should you use this landing page'
@@ -52,7 +53,7 @@ export default function Home() {
         Analysts says a landing page with video has 3% more conversion rate. So,
         don't forget to add one. Just like this.
       </SectionTitle>
-      <Video />
+
       <SectionTitle
         pretitle='Testimonials'
         title="Here's what our customers said"

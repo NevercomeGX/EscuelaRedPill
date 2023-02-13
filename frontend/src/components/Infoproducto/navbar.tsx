@@ -31,7 +31,7 @@ export default function Navbar() {
 
                 <Disclosure.Button
                   aria-label='Toggle Menu'
-                  className='dark:focus:bg-trueGray-700 ml-auto rounded-md px-2 py-1 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 lg:hidden'
+                  className='ml-auto rounded-md px-2 py-1 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700 lg:hidden'
                 >
                   <svg
                     className='h-6 w-6 fill-current'
@@ -58,7 +58,7 @@ export default function Navbar() {
                   <>
                     {navigation.map((item, index) => (
                       <Link legacyBehavior key={index} href='/'>
-                        <a className='dark:focus:bg-trueGray-700 -ml-4 w-full rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 dark:focus:bg-gray-800'>
+                        <a className='-ml-4 w-full rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700 dark:focus:bg-gray-800'>
                           {item}
                         </a>
                       </Link>
