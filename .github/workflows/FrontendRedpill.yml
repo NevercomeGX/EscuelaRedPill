@@ -24,15 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          cache: "yarn"
       # - name: Stop PM2
-      #   run: npm run stop-pm2
-      - run: npm ci
-      - run: npm run build
+      #   run: yarn stop-pm2
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
       - name: Reloading pm2
         run: |
           echo "Reloading pm2"
       - name: Start PM2
         run: pm2 start all
-      - name: Start application with pm2
-        run: pm2 start ecosystem.config.js
