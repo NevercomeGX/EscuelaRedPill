@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/linktree',
+        destination: '/consultas',
         permanent: true,
       },
     ];
