@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 import Container from '../container';
@@ -9,6 +8,7 @@ interface Props {
 }
 
 const ContactForm = ({ heading, message }: Props) => {
+  const [confirmation, setConfirmation] = useState(false);
   const [credentials, setCredentials] = useState({
     name: '',
     lastName: '',
@@ -22,20 +22,18 @@ const ContactForm = ({ heading, message }: Props) => {
     setAcceptedTerms(e.target.checked);
   };
 
-  const router = useRouter();
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // prevent the default form submission behavior
 
     // create a new user object with the form data
     try {
-      axios.post(process.env.NEXT_PUBLIC_HOST + '/api/emails', {
+      axios.post('localhost:4000/api/emails', {
         name: credentials.name,
         lastName: credentials.lastName,
         email: credentials.email,
-        selectedOption: credentials.country,
+        selectedOption: 'empty',
       });
-      router.push('/gracias');
+      setConfirmation(true);
     } catch (error) {
       //s
     }
@@ -98,18 +96,6 @@ const ContactForm = ({ heading, message }: Props) => {
           />
           <br />
 
-          <input
-            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
-            placeholder='Pais'
-            type='text'
-            onChange={(e) =>
-              setCredentials({
-                ...credentials,
-                country: e.target.value,
-              })
-            }
-            required
-          />
           {/* 
           <select
             className='form-control my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
@@ -165,6 +151,15 @@ const ContactForm = ({ heading, message }: Props) => {
             </button>
           ) : // </Link>
           null}
+          <div className='flex w-full items-center justify-center'>
+            {confirmation ? (
+              // <Link href='/gracias'>
+              <p className='my-4 rounded-md px-8 py-2 font-bold text-green-300 lg:w-96'>
+                REGISTRATE COMPLETADO
+              </p>
+            ) : // </Link>
+            null}
+          </div>
         </form>
       </div>
     </Container>

@@ -7,7 +7,7 @@ interface link {
 export default function Video({ video }: link) {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <div className=' mx-auto w-4/5  max-w-3xl overflow-hidden lg:mb-20'>
+    <div className=' mx-auto w-4/5   overflow-hidden lg:mb-20'>
       <div
         onClick={() => setPlayVideo(!playVideo)}
         className='aspect-w-16 aspect-h-9 relative cursor-pointer  '

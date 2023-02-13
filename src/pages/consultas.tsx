@@ -1,7 +1,6 @@
 import {
   faInstagram,
   faTiktok,
-  faTwitch,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
 import {
@@ -10,28 +9,21 @@ import {
   faShoppingCart,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 
 import Seo from '@/components/Global/Seo';
+import NavBar from '@/components/Semilla/NavigationBar/NavBar';
 
 export default function Consulting() {
   return (
     <>
       <Seo />
       <section>
-        <div className=' relative m-0 p-0 leading-none '>
-          <Image
-            className='align-middle '
-            src='/assets/banner.jpg'
-            alt=''
-            height={300}
-            width={1920}
-            style={{ height: '300px', width: '100%', objectFit: 'none' }}
-          />
+        <div className=' relative m-0 pb-32 leading-none md:pb-64 '>
+          <NavBar />
         </div>
 
         {/* content */}
-        <div className=' container ml-auto mr-auto pr-[15px] pl-[15px] lg:w-[1170px] '>
+        <div className=' container ml-auto mr-auto flex flex-col pr-[15px] pl-[15px] lg:w-[1170px] lg:flex-row'>
           <div className='row'>
             <aside className=' relative float-left  hidden min-h-[1px] w-1/4 pl-[15px] pr-[15px] md:block lg:block '>
               {/* sidebar */}
@@ -46,7 +38,7 @@ export default function Consulting() {
 
                 <figure className='left-0 px-0 py-[12px] text-center'>
                   <a
-                    href='https://www.facebook.com/andresvernazza.social'
+                    href='https://www.youtube.com/@EscuelaRedPill'
                     className=' float-none mx-[5px] mt-0 mb-[5px] inline-block '
                   >
                     <FontAwesomeIcon
@@ -55,7 +47,7 @@ export default function Consulting() {
                     />
                   </a>
                   <a
-                    href='https://twitter.com/Andres_vernazza'
+                    href='https://www.tiktok.com/@escuelaredpill?lang=en'
                     className=' float-none mx-[5px] mt-0 mb-[5px] inline-block '
                   >
                     <FontAwesomeIcon
@@ -64,7 +56,7 @@ export default function Consulting() {
                     />
                   </a>
                   <a
-                    href='https://www.instagram.com/andresvernazza/'
+                    href='https://www.instagram.com/escuelaredpill/'
                     className=' float-none mx-[5px] mt-0 mb-[5px] inline-block '
                   >
                     <FontAwesomeIcon
@@ -74,16 +66,7 @@ export default function Consulting() {
                   </a>
 
                   <a
-                    href='https://www.linkedin.com/in/andresvernazza/'
-                    className=' float-none mx-[5px] mt-0 mb-[5px] inline-block '
-                  >
-                    <FontAwesomeIcon
-                      icon={faTwitch}
-                      style={{ fontSize: 30, color: '#22a3fe' }}
-                    />
-                  </a>
-                  <a
-                    href='https://www.linkedin.com/in/andresvernazza/'
+                    href='https://alpha.drjuanlopez.com/consultas'
                     className=' float-none mx-[5px] mt-0 mb-[5px] inline-block '
                   >
                     <FontAwesomeIcon
@@ -101,19 +84,30 @@ export default function Consulting() {
 									padding: 5px 1em 0 2em; */}
                 <h5 className=' m-0 break-words py-0 pt-0 pr-0 pb-[25px] pl-[7px] text-[14px] text-[#0c1827] '>
                   <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Similique, veniam. Ad esse voluptate non voluptates ratione
-                    ex similique, architecto pariatur libero impedit commodi
-                    blanditiis et numquam. Optio deserunt provident voluptates!
+                    Como consultor en relaciones interpersonales, habilidades
+                    sociales y psicólogo experimentado, te ofrezco una hora de
+                    sesión para ayudarte a alcanzar tus objetivos y superar tus
+                    desafíos.
+                    <br />
+                    <br />
+                    Obtén la guía experta que necesitas para crecer y prosperar.
+                    <br />
+                    <br />
+                    Realiza tu pago fácilmente a través de PayPal o tu cuenta
+                    bancaria, y accede a la sesión en línea a través de Google
+                    Meet. No esperes más, invierte en ti mismo y empieza a tomar
+                    el control de tu vida conmigo.
                   </div>
                   <div>
                     <br />
                   </div>
                   <div>
-                    WhatsApp:
+                    Link de reserva: <br />
                     <a className=' underline' href='' target='' rel=''>
                       <span>
-                        <strong>+1 417 658 4414</strong>
+                        <a href='https://www.paypal.com/paypalme/juxnsubs'>
+                          https://www.paypal.com/paypalme/juxnsubs'
+                        </a>
                       </span>
                     </a>
                   </div>
@@ -124,7 +118,6 @@ export default function Consulting() {
                   <div>
                     <br />
                   </div>
-                  <div>Si puedes soñarlo, puedes lograrlo</div>
                 </h5>
               </div>
             </aside>
@@ -141,8 +134,8 @@ export default function Consulting() {
                       </h2>
                       <p className=' m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
                         <div>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Delectus, repellat!
+                          Consultor en relaciones interpersonales, habilidades
+                          sociales y psicólogo.
                         </div>
                       </p>
                     </div>
@@ -159,43 +152,40 @@ export default function Consulting() {
                       </h3>
                       <p className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
                         <div>
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Provident voluptatem aliquid commodi,
-                          <strong>
+                          Juan Lopez es un psicólogo profesional y consultor
+                          especializado en habilidades sociales, relaciones
+                          interpersonales y de pareja. Nació en Colombia y lleva
+                          más de 10 años estudiando y trabajando en este campo.
+                        </div>
+                        <br />
+                        <div>
+                          Su interés por la psicología y las relaciones surgió
+                          después de una fuerte ruptura sentimental que lo llevó
+                          a investigar sobre la psicología y la dinámica de las
+                          relaciones de pareja. A pesar de los éxitos iniciales,
+                          también experimentó decepciones y desafíos en sus
+                          relaciones, lo que lo llevó a profundizar aún más en
+                          el campo de la inteligencia emocional, las habilidades
+                          sociales, relaciones de pareja y psicología
+                          evolucionista.
+                          {/* <strong>
                             eaque nihil porro. Consequuntur ullam nisi repellat
-                          </strong>
+                          </strong> */}
                         </div>
                         <div>
                           <br />
                         </div>
-                        <strong>Lorem:</strong> ipsum dolor sit amet
-                        consectetur, adipisicing elit. Facilis similique,
-                        distinctio quis pariatur nemo aut voluptatum consequatur
-                        a, dignissimos rerum recusandae, eius exercitationem
-                        modi nihil laborum alias eligendi cum sapiente? Nulla
-                        minus quis praesentium iusto consequatur! Suscipit rerum
-                        repellat exercitationem perspiciatis reprehenderit,
-                        doloribus possimus harum vero repudiandae maxime
-                        recusandae, eveniet, dolore beatae? Nobis quae porro,
-                        adipisci reprehenderit voluptate expedita a. Facere qui
-                        laudantium, consequatur delectus provident quibusdam
-                        aliquam ipsa nostrum. Quos facilis, vitae sapiente
-                        voluptatem voluptatibus maxime quae ea eveniet,
-                        repellendus eaque repellat id quo ullam quod placeat,
-                        quam asperiores. Modi expedita numquam voluptatum fugiat
-                        perferendis eos quod beatae voluptas temporibus mollitia
-                        ipsam dolores, veritatis fuga, fugit libero nam iste
-                        ratione nemo similique? Possimus maiores incidunt harum
-                        sequi blanditiis obcaecati. Reiciendis eum facere nihil
-                        temporibus repellendus quas nostrum voluptatum ea eius
-                        sequi beatae nemo, quae possimus, provident illo
-                        veritatis assumenda officiis? Et cupiditate maxime ullam
-                        laborum at. Error, atque molestias. Magni est suscipit
-                        omnis sapiente quo illo harum alias laboriosam quae
-                        atque, consectetur, eaque provident dicta impedit
-                        exercitationem reprehenderit culpa dolore, consequuntur
-                        ullam nulla veritatis autem? Modi ipsa
-                        <strong>cupiditate earum.</strong>
+                        {/* <strong>Lorem:</strong> ipsum dolor sit amet Como */}
+                        psicólogo y consultor, Juan se ha especializado en
+                        ayudar a los hombres a desarrollar sus habilidades
+                        sociales, mejorar su autoconcepto y autoestima, y
+                        mejorar la calidad de sus relaciones a través de la
+                        combinación de su formación en psicología y su
+                        experiencia personal. Con su amplio conocimiento y
+                        experiencia, Juan ha atendido a cientos de casos y ha
+                        ayudado a muchos hombres a mejorar sus vidas y sus
+                        relaciones.
+                        {/* <strong>cupiditate earum.</strong> */}
                       </p>
                     </article>
                   </div>
@@ -204,18 +194,21 @@ export default function Consulting() {
                 <div>
                   <div className='aboutme'>
                     <div className='row'>
-                      <figure className=' relative float-left m-0 min-h-[1px] w-1/12 px-[15px] leading-[0px]'>
-                        <svg></svg>
-                      </figure>
+                      <figure className=' relative float-left m-0 min-h-[1px] w-1/12 px-[15px] leading-[0px]'></figure>
                       <article className=' relative float-left min-h-[1px] w-11/12 px-[15px] '>
+                        <a href='https://www.paypal.com/paypalme/juxnsubs'>
+                          <button className='my-4 justify-center rounded-md border border-[#212121] bg-[#33bfb3] px-8 py-2 text-center font-bold text-white hover:bg-[#33bfc9]'>
+                            Link de reserva
+                          </button>
+                        </a>
                         <h3 className='m-0 px-0 pt-0 pb-[15px] text-[16px] font-[700] leading-[18px] text-[#0c1827] '>
                           SERVICIOS
                         </h3>
                         <p className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
                           <div className='pb-[15px] text-[#33bfb3]'>
                             <strong>
-                              Asesoría Emocional y de Relaciones Humanas -
-                              SESIÓN INDIVIDUAL (1 persona)
+                              Asesoría y consultoría - SESIÓN INDIVIDUAL (1
+                              persona)
                             </strong>
                           </div>
                           <div className='pb-[15px] text-[#4d4c4c]'>
@@ -224,47 +217,59 @@ export default function Consulting() {
                                 icon={faShoppingCart}
                                 style={{ fontSize: 15, color: '#4d4c4c' }}
                               />{' '}
-                              $120.00 USD{' '}
+                              $59.00 USD{' '}
                             </strong>
                             <strong>
                               <FontAwesomeIcon
                                 icon={faClock}
                                 style={{ fontSize: 15, color: '#4d4c4c' }}
                               />{' '}
-                              50 minutos
+                              60 minutos
                             </strong>
                           </div>
-                          <strong>Lorem:</strong> ipsum dolor sit amet
-                          consectetur, adipisicing elit. Facilis similique,
-                          distinctio quis pariatur nemo aut voluptatum
-                          consequatur a, dignissimos rerum recusandae, eius
-                          exercitationem modi nihil laborum alias eligendi cum
-                          sapiente? Nulla minus quis praesentium iusto
-                          consequatur! Suscipit rerum repellat exercitationem
-                          perspiciatis reprehenderit, doloribus possimus harum
-                          vero repudiandae maxime recusandae, eveniet, dolore
-                          beatae? Nobis quae porro, adipisci reprehenderit
-                          voluptate expedita a. Facere qui laudantium,
-                          consequatur delectus provident quibusdam aliquam ipsa
-                          nostrum. Quos facilis, vitae sapiente voluptatem
-                          voluptatibus maxime quae ea eveniet, repellendus eaque
-                          repellat id quo ullam quod placeat, quam asperiores.
-                          Modi expedita numquam voluptatum fugiat perferendis
-                          eos quod beatae voluptas temporibus mollitia ipsam
-                          dolores, veritatis fuga, fugit libero nam iste ratione
-                          nemo similique? Possimus maiores incidunt harum sequi
-                          blanditiis obcaecati. Reiciendis eum facere nihil
-                          temporibus repellendus quas nostrum voluptatum ea eius
-                          sequi beatae nemo, quae possimus, provident illo
-                          veritatis assumenda officiis? Et cupiditate maxime
-                          ullam laborum at. Error, atque molestias. Magni est
-                          suscipit omnis sapiente quo illo harum alias
-                          laboriosam quae atque, consectetur, eaque provident
-                          dicta impedit exercitationem reprehenderit culpa
-                          dolore, consequuntur ullam nulla veritatis autem? Modi
-                          ipsa
-                          <strong>cupiditate earum.</strong>
+                          Esta es una sesión de asesoría individual por google
+                          meet, discord (o Whatsapp alternativamente) de 60
+                          minutos con Juan Lopez, en la que se brindará asesoría
+                          y apoyo en temas relacionados con la salud emocional,
+                          habilidades sociales, análisis de relación sentimental
+                          y psicoterapia.
+                          {/* <strong>cupiditate earum.</strong> */}
                         </p>
+                        <br />
+                        <p className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
+                          ESPECIALIDADES: Desarrollo del autoestima,
+                          inteligencia emocional y resolución de conflictos en
+                          relaciones, mejora de la comunicación en pareja,
+                          superación de rupturas amorosas, definición de
+                          sentimientos y emociones, mejora de la atracción en
+                          una relación, entendimiento de las dinámicas en las
+                          relaciones de pareja, y desarrollo de habilidades
+                          sociales y de citas.
+                        </p>
+                        <br />
+                        <p className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
+                          Si estás enfrentando problemas en tus relaciones o en
+                          tu vida emocional, no dudes en reservar una sesión con
+                          Juan Lopez. Una vez realizada la reserva, recibirás un
+                          email con los detalles para acceder a la sesión. Al
+                          final de la sesión, Juan Lopez te brindará un plan de
+                          acción personalizado para ayudarte a superar tus
+                          problemas y mejorar en tus relaciones.
+                        </p>
+                        <br />
+                        <p className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
+                          *NOTA: Este servicio está mas orientado al counseling
+                          que a la psicoterapia. Las sesiones de asesoría de
+                          Juan Lopez están enfocadas en brindar apoyo y
+                          acompañamiento emocional y en mejorar tus relaciones
+                          interpersonales, no en tratar problemas de salud
+                          mental graves.
+                        </p>
+                        <br />
+
+                        <button className='my-4 justify-center rounded-md border border-[#212121] bg-[#33bfb3] px-8 py-2 text-center font-bold text-white hover:bg-[#33bfc9]'>
+                          Registrate
+                        </button>
                       </article>
                     </div>
                   </div>

@@ -21,7 +21,7 @@ export default function Video() {
           type='submit'
           className='my-4 rounded-md border border-[#212121] bg-[#c70039] px-8 py-2 font-bold lg:w-96'
         >
-          REGISTRATE GRATIS
+          UNETE AL GRUPO
         </button>
         <p className='text-white'>
           * Si desde el celular al hacer click no se descarga, deja presionado y
