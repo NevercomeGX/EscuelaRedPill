@@ -26,17 +26,22 @@ const ContactForm = ({ heading, message }: Props) => {
     e.preventDefault(); // prevent the default form submission behavior
 
     // create a new user object with the form data
-    try {
-      axios.post('localhost:4000/api/emails', {
+
+    const { data } = await axios.post(
+      'http://localhost:8000/emailss/',
+      {
         name: credentials.name,
         lastName: credentials.lastName,
         email: credentials.email,
-        selectedOption: 'empty',
-      });
-      setConfirmation(true);
-    } catch (error) {
-      //s
-    }
+        country: credentials.country,
+      },
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      }
+    );
+    setConfirmation(true);
   };
 
   return (
@@ -90,6 +95,18 @@ const ContactForm = ({ heading, message }: Props) => {
               setCredentials({
                 ...credentials,
                 email: e.target.value,
+              })
+            }
+            required
+          />
+
+          <input
+            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
+            placeholder='Pais'
+            onChange={(e) =>
+              setCredentials({
+                ...credentials,
+                country: e.target.value,
               })
             }
             required

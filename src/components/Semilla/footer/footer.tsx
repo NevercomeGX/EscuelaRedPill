@@ -5,13 +5,13 @@ import Nevercomex from '@/components/nevercomex/copyright';
 
 export default function Footer() {
   return (
-    <section className='relative mt-10 bg-[#212121] p-10'>
-      <div className=' flex flex-1 flex-col justify-evenly border-gray-100 lg:flex-row '>
+    <section className='relative mt-10 bg-[#212121] p-2'>
+      <div className=' flex flex-1 flex-col items-center justify-center border-gray-100 md:justify-evenly lg:flex-row lg:items-stretch '>
         <div className='lg:col-span-2'>
           <div>
             {' '}
             <Link legacyBehavior href='/'>
-              <a className='flex items-center p-2 text-2xl font-medium text-black dark:text-gray-100'>
+              <a className='flex items-center text-2xl font-medium text-black dark:text-gray-100 lg:p-2'>
                 <span>
                   <img
                     src='/assets/pildora.png'
@@ -28,16 +28,18 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className='max-w-md p-2 text-white'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime
+          <div className='max-w-md text-white lg:p-2'>
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod maxime
             facilis qui delectus enim cupiditate provident iusto autem unde
             rerum libero asperiores cum numquam quia, tempora est assumenda
-            animi doloribus!
+            animi doloribus! */}
           </div>
         </div>
         <div className='pt-4'>
-          <div className='text-white '>Follow us</div>
-          <div className='mt-5 flex items-start  gap-4 text-white lg:flex-col'>
+          <div className='flex items-center justify-center  text-white '>
+            Siguenos
+          </div>
+          <div className='mt-5 flex items-center  gap-4 text-white lg:flex-row'>
             <a
               href='https://twitter.com/web3templates'
               target='_blank'
@@ -100,16 +102,17 @@ export default function Footer() {
           </div> */}
       </div>
 
-      <div className='my-10 text-center text-sm text-white'>
-        Copyright © {new Date().getFullYear()}. Made by{' '}
-        <a
+      <div className='my-4  text-center text-sm text-white'>
+        Copyright © {new Date().getFullYear()} Escuela RedPill.{' '}
+        <br className='md:hidden' /> Todos los derechos reservados
+        {/* <a
           href='https://web3templates.com/'
           target='_blank'
           rel='noopener noreferrer'
           className='text-lg text-[#44bae8]'
         >
-          nevercomeX.
-        </a>{' '}
+          Escuela Redpill.
+        </a>{' '} */}
       </div>
 
       {/* Do not remove this */}

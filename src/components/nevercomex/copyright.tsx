@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const nevercomex = () => {
   return (
-    <div className='mt-5'>
+    <div className=''>
       <button className='flex flex-row items-center justify-center gap-2 rounded-md bg-black py-1 px-4 font-bold text-white hover:bg-gray-900 hover:text-white'>
         <div className='flex w-8 items-start justify-center '>
           {' '}
@@ -15,7 +15,7 @@ const nevercomex = () => {
           />
         </div>
 
-        <div className='border-l pl-2 font-mono '>NevercomeX</div>
+        <div className='border-l pl-4 font-mono '>Powered by NX</div>
       </button>
       <a
         href='https://vercel.com/?utm_source=web3templates&utm_campaign=oss'
