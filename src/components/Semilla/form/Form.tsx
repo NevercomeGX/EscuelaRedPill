@@ -27,21 +27,27 @@ const ContactForm = ({ heading, message }: Props) => {
 
     // create a new user object with the form data
 
-    const { data } = await axios.post(
-      'http://localhost:8000/emailss/',
-      {
-        name: credentials.name,
-        lastName: credentials.lastName,
-        email: credentials.email,
-        country: credentials.country,
-      },
-      {
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+    try {
+      const { data } = await axios.post(
+        'http://34.148.248.36:8000/emailss',
+        {
+          name: credentials.name,
+          lastName: credentials.lastName,
+          email: credentials.email,
+          country: credentials.country,
         },
-      }
-    );
-    setConfirmation(true);
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+        }
+      );
+      setConfirmation(true);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

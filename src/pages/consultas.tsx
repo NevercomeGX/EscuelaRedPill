@@ -11,11 +11,20 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
 import '@fontsource/raleway';
 
 import Seo from '@/components/Global/Seo';
 export default function Consulting() {
   const [nav, setNav] = useState(false);
+
+  useCalendlyEventListener({
+    onProfilePageViewed: () => console.log('onProfilePageViewed'),
+    onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
+    onEventTypeViewed: () => console.log('onEventTypeViewed'),
+    onEventScheduled: (e) => console.log(e.data.payload),
+  });
+
   // const [color, setColor] = useState("transparent");
 
   const handleNav = () => {
@@ -25,7 +34,7 @@ export default function Consulting() {
   return (
     <>
       <Seo templateTitle='Consultas' />
-      <section>
+      <section id='root'>
         <div className=' relative m-0 pb-32 leading-none md:pb-64 '>
           <div className='backdrop fixed left-0 top-0 z-10 w-full bg-[#212121]/60 backdrop-brightness-50 duration-300  ease-in  '>
             <div className='m-auto flex max-w-[1240px] items-center justify-between text-white'>
@@ -264,6 +273,10 @@ export default function Consulting() {
                             RESERVA AHORA
                           </button>
                         </a>
+                        <div className='App'>
+                          <InlineWidget url='https://calendly.com/escuelaredpill/30min' />
+                        </div>
+
                         <h3 className='m-0 px-0 pt-0 pb-[15px] text-[16px] font-[700] leading-[18px] text-[#0c1827] '>
                           SERVICIOS
                         </h3>
