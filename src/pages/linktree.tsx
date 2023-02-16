@@ -240,7 +240,7 @@ export default function Home({
         <div className='mx-auto mt-12 flex w-full flex-col items-center justify-center px-4 text-center '>
           <figure className='   m-0 flex w-full justify-center py-0 px-[10px] text-center align-middle '>
             <img
-              className='box-content h-[150px] w-[150px] rounded-[150px] border-4 border-[#f2f2f2] object-cover   '
+              className='box-content h-[150px] w-[150px] rounded-[150px] border-2 border-[#f2f2f2] object-cover   '
               src='/assets/IMG_8642.png'
               alt=''
             />
