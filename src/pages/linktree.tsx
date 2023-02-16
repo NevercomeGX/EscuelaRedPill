@@ -55,12 +55,30 @@ function Social({
           ? 'bg-[#fff]'
           : title === 'Instagram'
           ? 'bg-[#F55376]'
-          : title === 'Telegram'
-          ? 'bg-[#29B6F6]'
-          : title === 'Tiktok'
-          ? 'bg-slate-800'
-          : 'bg-gray-100'
+          : title === 'Spotify'
+          ? 'bg-[#1DB954]'
+          : title === 'Ivoox'
+          ? 'bg-[#FFB266]'
+          : title === 'Apple Podcast'
+          ? 'bg-[#B2A9D1]'
+          : 'bg-slate-200'
       }  mb-3 max-w-3xl`}
+
+      // {
+      //   "title": "Spotify",
+      //   "href": "",
+      //   "image": ""
+      // },
+      // {
+      //   "title": "Evoox",
+      //   "href": "",
+      //   "image": ""
+      // },
+      // {
+      //   "title": "Apple Podcast",
+      //   "href": "",
+      //   "image": ""
+      // }
     >
       <div className='flex w-full items-center  justify-between text-center'>
         <div className=' relative flex h-12 flex-grow-0  items-center p-0 '>
@@ -220,14 +238,13 @@ export default function Home({
       <Seo templateTitle='Linktree' />
       <body className='h-full bg-[#181818]'>
         <div className='mx-auto mt-12 flex w-full flex-col items-center justify-center px-4 text-center '>
-          <Image
-            priority
-            className=' image-cropper border-4'
-            alt={data.name}
-            src={data.avatar}
-            width={120}
-            height={120}
-          />
+          <figure className='   m-0 flex w-full justify-center py-0 px-[10px] text-center align-middle '>
+            <img
+              className='box-content h-[150px] w-[150px] rounded-[150px] border-4 border-[#f2f2f2] object-cover   '
+              src='/assets/IMG_8642.png'
+              alt=''
+            />
+          </figure>
           <h1 className='mt-2 mb-2 text-3xl font-bold text-white'>
             {data.name}
           </h1>
@@ -257,7 +274,9 @@ export default function Home({
           <div
             className={` mb-3 flex  max-h-[0] w-full max-w-[100px]  items-center rounded-sm bg-gray-100 p-1 text-lg `}
           ></div>
-          <h2 className='pb-2 text-white'>Empieza Aquí 👇</h2>
+          <h2 className='pb-2 text-white'>
+            Empieza Aquí <br /> 👇
+          </h2>
           {data.links.map((link) => (
             <LinkCard key={link.href} {...link} />
           ))}
@@ -276,45 +295,8 @@ export default function Home({
             href={href}
             target='_blank'
             rel='noopener noreferrer'
-            className='mb-3 flex  w-full max-w-3xl items-center rounded-sm bg-gray-100 transition-all hover:scale-105'
-          >
-            <div className='flex w-full items-center  justify-between text-center'>
-              <div className=' relative flex flex-grow-0  items-center p-2'>
-                {image && (
-                  <Image
-                    className='rounded-md'
-                    alt={title}
-                    src={image}
-                    width={70}
-                    height={70}
-                  />
-                )}
-              </div>
-              <div className='flex w-full flex-grow-[1] flex-col items-center justify-center p-2'>
-                <h1 className=' text-lg  font-semibold text-gray-700 '>
-                  MAS CURSOS COMPLETOS
-                </h1>
-                <p className=' text-sm text-gray-700'>RELACIONES DE PAREJA</p>
-              </div>
-
-              <div className='relative flex h-10 flex-grow-0  items-center p-2'>
-                {image && (
-                  <Image
-                    className='rounded-md'
-                    alt={title}
-                    src={image}
-                    width={70}
-                    height={70}
-                  />
-                )}
-              </div>
-            </div>
-          </a>
-          <iframe
-            id='embedPlayer'
-            src='https://embed.podcasts.apple.com/us/podcast/la-verdad-sobre-las-mujeres-escuela-redpill/id1667721683?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto'
-            height='450px'
-          ></iframe>
+            className='mb-12 flex  w-full max-w-3xl items-center rounded-sm bg-gray-100 transition-all hover:scale-105'
+          ></a>
         </div>
       </body>
     </>

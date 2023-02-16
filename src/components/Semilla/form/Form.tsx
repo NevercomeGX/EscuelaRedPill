@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 
+import Button from '@/components/Global/buttons/Button';
+
 import Container from '../container';
 interface Props {
   heading: string;
@@ -8,33 +10,38 @@ interface Props {
 }
 
 const ContactForm = ({ heading, message }: Props) => {
-  const [confirmation, setConfirmation] = useState(false);
-  const [credentials, setCredentials] = useState({
-    name: '',
-    lastName: '',
-    email: '',
-    country: '',
-  });
+  const [loading, setLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+
+  const [name, setName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [country, setCountry] = useState('');
 
   const [acceptedTerms, setAcceptedTerms] = useState(false);
 
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheckboxChange = async (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setAcceptedTerms(e.target.checked);
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // prevent the default form submission behavior
+    setIsLoading(true);
 
     // create a new user object with the form data
 
     try {
-      const { data } = await axios.post(
-        'http://34.148.248.36:8000/emailss',
+      setLoading(true);
+      const { data, status } = await axios.post(
+        'http://localhost:8000/emailss',
         {
-          name: credentials.name,
-          lastName: credentials.lastName,
-          email: credentials.email,
-          country: credentials.country,
+          name: name,
+          lastName: lastName,
+          email: email,
+          country: country,
         },
         {
           headers: {
@@ -43,10 +50,15 @@ const ContactForm = ({ heading, message }: Props) => {
           },
         }
       );
-      setConfirmation(true);
+      if (status === 201) {
+        setIsSuccess(true);
+        console.log(status);
+      }
+      setIsLoading(false);
       console.log(data);
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
     }
   };
 
@@ -68,12 +80,7 @@ const ContactForm = ({ heading, message }: Props) => {
             placeholder='Nombre'
             type='text'
             id='first-name'
-            onChange={(e) =>
-              setCredentials({
-                ...credentials,
-                name: e.target.value,
-              })
-            }
+            onChange={(e) => setName(e.target.value)}
             required
           />
           <br />
@@ -83,12 +90,7 @@ const ContactForm = ({ heading, message }: Props) => {
             placeholder='Apellido'
             type='text'
             id='last-name'
-            onChange={(e) =>
-              setCredentials({
-                ...credentials,
-                lastName: e.target.value,
-              })
-            }
+            onChange={(e) => setLastName(e.target.value)}
             required
           />
           <br />
@@ -97,24 +99,14 @@ const ContactForm = ({ heading, message }: Props) => {
             placeholder='Email'
             type='email'
             id='email'
-            onChange={(e) =>
-              setCredentials({
-                ...credentials,
-                email: e.target.value,
-              })
-            }
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
 
           <input
             className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
             placeholder='Pais'
-            onChange={(e) =>
-              setCredentials({
-                ...credentials,
-                country: e.target.value,
-              })
-            }
+            onChange={(e) => setCountry(e.target.value)}
             required
           />
           <br />
@@ -164,24 +156,26 @@ const ContactForm = ({ heading, message }: Props) => {
               </span>
             </label>
           </div>
-          {acceptedTerms ? (
-            // <Link href='/gracias'>
-            <button
-              type='submit'
-              className='my-4 rounded-md border border-[#212121] bg-[#c70039] px-8 py-2 font-bold lg:w-96'
-            >
-              REGISTRATE GRATIS
-            </button>
-          ) : // </Link>
-          null}
+
+          <Button
+            type='submit'
+            isLoading={isLoading}
+            disabled={isLoading && !acceptedTerms}
+            className={` rounded-md border border-[#212121] bg-[#c70039] ${
+              isLoading ? '' : ''
+            }px-8 py-2 text-center font-bold `}
+          >
+            {isLoading
+              ? 'PLEASE WAIT'
+              : isSuccess
+              ? 'REGISTRO EXITOSO'
+              : 'REGISTRATE COMPLETADO'}
+          </Button>
+
           <div className='flex w-full items-center justify-center'>
-            {confirmation ? (
-              // <Link href='/gracias'>
-              <p className='my-4 rounded-md px-8 py-2 font-bold text-green-300 lg:w-96'>
-                REGISTRATE COMPLETADO
-              </p>
-            ) : // </Link>
-            null}
+            <p className='my-4 rounded-md px-8 py-2 font-bold text-green-300 lg:w-96'>
+              {isSuccess && <p>Thank you for your submission!</p>}
+            </p>
           </div>
         </form>
       </div>

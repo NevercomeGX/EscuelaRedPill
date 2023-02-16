@@ -3,59 +3,53 @@
 	"avatar": "/assets/IMG_8642.png",
 	"maincard": [
 		{
-			"title": "lorem",
+			"title": "Asesoría Personalizada - Privada con Juan",
 			"href": "/consultas",
-			"image": "/assets/pngwing.png",
-			"message": "lorem"
+			"image": "",
+			"message": "Habilidades Sociales | Inteligencia Emocional | Relaciones de Pareja | Psicoterapia"
 		}
 	],
 	"links": [
 		{
-			"title": "lorem",
-			"href": "/semilla",
-			"image": "/assets/pngwing2.png",
-			"message": "lorem"
-		},
-
-		{
-			"title": "lorem",
-			"href": "/test",
-
-			"image": "/assets/pngwing3.png",
-			"message": "lorem"
-		},
-
-		{
-			"title": "lorem",
-			"href": "",
-			"image": "/assets/agent-smith.png",
-			"message": "lorem",
-			"flechita": true,
-			"divider": "Socials"
+			"title": "Taller GRATIS de Habilidades Sociales",
+			"href": "https://docs.google.com/forms/d/e/1FAIpQLScVY7FgoTUbzyNqKO7qigcXiifqZzLl4MLcFgVjQZMm8EScgg/viewform",
+			"image": "",
+			"message": "El ABC de la comunicacion"
 		}
 	],
 	"socials": [
 		{
 			"title": "Youtube",
-			"href": "",
+			"href": "https://www.youtube.com/@EscuelaRedPill",
 			"image": "https://img.icons8.com/color/96/000000/youtube-play.png"
 		},
 		{
 			"title": "Tiktok",
-			"href": "",
-
+			"href": "https://www.tiktok.com/@escuelaredpill?lang=en",
 			"image": "https://img.icons8.com/ios/50/null/tiktok--v1.png"
 		},
 		{
 			"title": "Instagram",
-			"href": "",
+			"href": "https://www.instagram.com/escuelaredpill/",
 			"image": "https://img.icons8.com/color-glass/96/null/instagram-new.png"
 		},
 		{
-			"title": "Telegram",
-			"href": "",
-			"image": "https://img.icons8.com/color/96/null/telegram-app--v1.png"
+			"title": "Spotify",
+			"href": "https://open.spotify.com/show/02uUmZEKDXD5L61AYFkohu",
+			"image": "https://img.icons8.com/fluency/144/null/spotify.png"
+		},
+		{
+			"title": "Ivoox",
+			"href": "https://go.ivoox.com/sq/1548421",
+			"image": "https://static-nweb.ivoox.com/img/logo_gradient.svg"
+		},
+		{
+			"title": "Apple Podcast",
+			"href": "https://podcasts.apple.com/us/podcast/la-verdad-sobre-las-mujeres-escuela-redpill/id1667721683?fbclid=PAAaZR9sPJQdLXau56U1Mf4Wrbes7HRhW1w6evGP2wF4EgR-9O_ceJVKAClM4",
+			"image": "https://img.icons8.com/office/160/null/apple-podcasts--v2.png"
 		}
+		
+		
 	],
 	"Navbar": [
 		{
@@ -85,7 +79,7 @@
 	],
 	"footer2": [
 		{
-			"message": "Made with ❤️ by Juan López"
+			"message": ""
 		}
 	]
 }

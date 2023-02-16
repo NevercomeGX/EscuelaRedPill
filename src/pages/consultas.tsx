@@ -11,21 +11,26 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { InlineWidget, useCalendlyEventListener } from 'react-calendly';
+import { InlineWidget } from 'react-calendly';
 import '@fontsource/raleway';
 
 import Seo from '@/components/Global/Seo';
 export default function Consulting() {
   const [nav, setNav] = useState(false);
+  const [hidden, sethidden] = useState(true);
 
-  useCalendlyEventListener({
-    onProfilePageViewed: () => console.log('onProfilePageViewed'),
-    onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
-    onEventTypeViewed: () => console.log('onEventTypeViewed'),
-    onEventScheduled: (e) => console.log(e.data.payload),
-  });
+  // useCalendlyEventListener({
+  //   onProfilePageViewed: () => console.log('onProfilePageViewed'),
+  //   onDateAndTimeSelected: () => console.log('onDateAndTimeSelected'),
+  //   onEventTypeViewed: () => console.log('onEventTypeViewed'),
+  //   onEventScheduled: (e) => console.log(e.data.payload),
+  // });
 
   // const [color, setColor] = useState("transparent");
+
+  const toggleHidden = () => {
+    sethidden(!hidden);
+  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -73,7 +78,6 @@ export default function Consulting() {
                   </div>
                 </Link>
               </div>
-
               {/* Mobile Button */}
               {/* <div onClick={handleNav} className='z-10 block sm:hidden'>
                 {nav ? (
@@ -248,15 +252,14 @@ export default function Consulting() {
                           <br />
                         </div>
                         {/* <strong>Lorem:</strong> ipsum dolor sit amet Como */}
-                        psicólogo y consultor, Juan se ha especializado en
-                        ayudar a los hombres a desarrollar sus habilidades
-                        sociales, mejorar su autoconcepto y autoestima, y
-                        mejorar la calidad de sus relaciones a través de la
-                        combinación de su formación en psicología y su
-                        experiencia personal. Con su amplio conocimiento y
-                        experiencia, Juan ha atendido a cientos de casos y ha
-                        ayudado a muchos hombres a mejorar sus vidas y sus
-                        relaciones.
+                        Juan se ha especializado en ayudar a los hombres a
+                        desarrollar sus habilidades sociales, mejorar su
+                        autoconcepto y autoestima, y mejorar la calidad de sus
+                        relaciones a través de la combinación de su formación en
+                        psicología y su experiencia personal. Con su amplio
+                        conocimiento y experiencia, Juan ha atendido a cientos
+                        de casos y ha ayudado a muchos hombres a mejorar sus
+                        vidas y sus relaciones.
                         {/* <strong>cupiditate earum.</strong> */}
                       </p>
                     </article>
@@ -268,13 +271,15 @@ export default function Consulting() {
                     <div className='row'>
                       <figure className=' relative float-left m-0 min-h-[1px] w-1/12 px-[15px] leading-[0px]'></figure>
                       <article className=' relative float-left min-h-[1px] w-11/12 px-[15px] '>
-                        <a href='https://www.paypal.com/paypalme/juxnsubs'>
-                          <button className='my-4 justify-center rounded-md border border-[#212121] bg-[#33bfb3] px-8 py-2 text-center font-bold text-white hover:bg-[#33bfc9]'>
-                            RESERVA AHORA
-                          </button>
-                        </a>
-                        <div className='App'>
-                          <InlineWidget url='https://calendly.com/escuelaredpill/30min' />
+                        <button
+                          onClick={toggleHidden}
+                          className='my-4 h-16 w-64 justify-center rounded-md border border-[#212121] bg-[#33bfb3] px-8 py-2 text-center text-[22px] font-bold text-white hover:bg-[#33bfc9]'
+                        >
+                          RESERVA AHORA
+                        </button>
+
+                        <div hidden={hidden} className='App'>
+                          <InlineWidget url='https://calendly.com/escuelaredpill/asesoria' />
                         </div>
 
                         <h3 className='m-0 px-0 pt-0 pb-[15px] text-[16px] font-[700] leading-[18px] text-[#0c1827] '>

@@ -41,22 +41,6 @@ export default function Footer() {
           </div>
           <div className='mt-5 flex items-center  gap-4 text-white lg:flex-row'>
             <a
-              href='https://twitter.com/web3templates'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span className='sr-only'>Twitter</span>
-              <Twitter />
-            </a>
-            <a
-              href='https://facebook.com/web3templates'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span className='sr-only'>Facebook</span>
-              <Facebook />
-            </a>
-            <a
               href='https://instagram.com/web3templates'
               target='_blank'
               rel='noopener noreferrer'
