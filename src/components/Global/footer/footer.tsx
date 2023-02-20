@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 import Nevercomex from '@/components/Global/nevercomex/copyright';
@@ -10,19 +11,22 @@ export default function Footer() {
         <div className='lg:col-span-2'>
           <div>
             {' '}
-            <a className='flex items-center text-2xl font-medium text-black dark:text-gray-100 lg:p-2'>
-              <Image
-                src='/assets/pildora.png'
-                alt='N'
-                width='300'
-                height='300'
-                className='w-24'
-              />
-
-              <span className='text-white'>
-                Escuela <span className='text-[#c70039]'> Red Pill</span>
-              </span>
-            </a>
+            <Link href='/'>
+              <div className='flex items-center text-2xl font-medium text-black dark:text-gray-100 lg:p-2'>
+                <span>
+                  <Image
+                    src='/assets/pildora.png'
+                    alt='N'
+                    width='300'
+                    height='300'
+                    className='w-24'
+                  />
+                </span>
+                <span className='text-white'>
+                  Escuela <span className='text-[#c70039]'> Red Pill</span>
+                </span>
+              </div>
+            </Link>
           </div>
 
           <div className='max-w-md text-white lg:p-2'>
@@ -59,6 +63,28 @@ export default function Footer() {
         <div className='flex flex-col justify-start pt-10'>
           <Nevercomex />
         </div>
+        {/* <div>
+            <div className='-mt-2 -ml-3 flex w-full flex-wrap lg:ml-0'>
+              {navigation.map((item, index) => (
+                <Link legacyBehavior key={index} href='/'>
+                  <a className='w-full rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700'>
+                    {item}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className='-mt-2 -ml-3 flex w-full flex-wrap lg:ml-0'>
+              {legal.map((item, index) => (
+                <Link legacyBehavior key={index} href='/'>
+                  <a className='w-full rounded-md px-4 py-2 text-gray-500 hover:text-indigo-500 focus:bg-indigo-100 focus:text-indigo-500 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700'>
+                    {item}
+                  </a>
+                </Link>
+              ))}
+            </div>
+          </div> */}
       </div>
 
       <div className='my-4  text-center text-sm text-white'>
@@ -102,7 +128,6 @@ export default function Footer() {
 //     <path d='M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07' />
 //   </svg>
 // );
-
 const Instagram = ({ size = 24 }) => (
   <svg
     xmlns='http://www.w3.org/2000/svg'

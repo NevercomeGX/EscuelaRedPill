@@ -10,7 +10,6 @@ interface Props {
 }
 
 const ContactForm = ({ heading, message }: Props) => {
-  const [loading, setLoading] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -34,8 +33,7 @@ const ContactForm = ({ heading, message }: Props) => {
     // create a new user object with the form data
 
     try {
-      setLoading(true);
-      const { data, status } = await axios.post(
+      const { status } = await axios.post(
         'http://localhost:8000/emailss',
         {
           name: name,
@@ -52,12 +50,9 @@ const ContactForm = ({ heading, message }: Props) => {
       );
       if (status === 201) {
         setIsSuccess(true);
-        console.log(status);
       }
       setIsLoading(false);
-      console.log(data);
     } catch (error) {
-      console.log(error);
       setIsLoading(false);
     }
   };
@@ -110,34 +105,6 @@ const ContactForm = ({ heading, message }: Props) => {
             required
           />
           <br />
-
-          {/* 
-          <select
-            className='form-control my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-[#212121] bg-white py-2 px-4 align-middle text-lg leading-normal text-black'
-            value={selected}
-            onChange={handleChange}
-          >
-            {Country.map((Country) => (
-              <option key={Country.name} value={Country.name}>
-                {Country.name}
-              </option>
-            ))}
-          </select> */}
-          {/* <PhoneInput
-					placeholder="Enter phone number"
-					value={value}
-					onChange={event:Event}
-				/> */}
-
-          {/* <div className='form-group'>
-          <input
-            type='text'
-            className='my-2 min-h-[40px] w-2/3 max-w-full flex-grow-[1] rounded-md border-[1px] border-black bg-white py-2 px-4 align-middle text-lg leading-normal'
-            id='phoneNumber'
-            placeholder='Numero de telefono'
-          />
-        </div> */}
-          {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
           <br />
           <div className='flex w-full  flex-1 flex-col-reverse items-center justify-center py-10'>
             <input

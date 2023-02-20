@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
@@ -11,19 +12,13 @@ const NavBar = () => {
   };
 
   return (
-    <div className='backdrop fixed left-0 top-0 z-10 w-full bg-[#212121]/60 backdrop-brightness-50 duration-300  ease-in  '>
+    <div className='backdrop fixed left-0 top-0 z-10 w-full bg-[#212121]/90 backdrop-blur-md  duration-300  ease-in   '>
       <div className='m-auto flex max-w-[1240px] items-center justify-between text-white'>
-        {/* Logo */}
-        {/* <Link href='/'>
-          <h1 style={{ color: `${textColor}` }} className='text-4xl font-bold'>
-            Escuela <span style={{ color: `${Redpill}` }}> Red Pill </span>
-          </h1>
-        </Link> */}
         <div className='flex flex-1 flex-row items-center '>
           <Link href='/'>
             <div className='flex items-center text-2xl font-medium text-indigo-500 dark:text-gray-100'>
               <span>
-                <img
+                <Image
                   src='/assets/pildora.png'
                   alt='N'
                   width='32'

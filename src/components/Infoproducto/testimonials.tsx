@@ -1,29 +1,71 @@
 import Image from 'next/image';
 import React from 'react';
 
+import Card from './card';
 import Container from './container';
-import userOneImg from '../../../public/img/user1.jpg';
-import userTwoImg from '../../../public/img/user2.jpg';
-import userThreeImg from '../../../public/img/user3.jpg';
 
 export default function Testimonials() {
   return (
-    <Container>
-      <div className='grid gap-10 lg:grid-cols-2 xl:grid-cols-3'>
-        <div className='lg:col-span-2 xl:col-auto'>
-          <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
-            <p className='text-2xl leading-normal '>
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
-            </p>
+    <Container className=''>
+      <div className='flex min-h-[1px] w-full justify-center '>
+        <div className='mb-8 content-start p-3 text-center'>
+          <h1>TESTIMONIOS</h1>
+        </div>
+      </div>
+      <div className=' grid grid-cols-1  gap-4 px-5  sm:grid-cols-2 md:lg:px-56 lg:grid-cols-3'>
+        <Card />
+        <Card />
+        <Card />
+      </div>
 
-            <Avatar
-              image={userOneImg}
-              name='Sarah Steiner'
-              title='VP Sales at Google'
-            />
+      {/* <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100   dark:bg-trueGray-800'>
+            {' '}
+            <iframe
+              src='https://www.youtube.com/embed/LHf2KqT3g4U'
+              title=''
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+              className='h-full w-full rounded-2xl  '
+            ></iframe>
           </div>
         </div>
+        <div className='lg:col-span-2 xl:col-auto'>
+          <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 dark:bg-trueGray-800'>
+            {' '}
+            <iframe
+              src='https://www.youtube.com/embed/LHf2KqT3g4U'
+              title=''
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+              className='h-full w-full rounded-2xl'
+            ></iframe>
+          </div>
+        </div>
+        <div className='lg:col-span-2 xl:col-auto'>
+          <div className='4 flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 dark:bg-trueGray-800'>
+            {' '}
+            <iframe
+              src='https://www.youtube.com/embed/LHf2KqT3g4U'
+              title=''
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              allowFullScreen
+              className='h-full w-full rounded-2xl'
+            ></iframe>
+          </div>*/}
+      {/* <div className=' mx-12 grid grid-cols-1 gap-4 object-center sm:grid-cols-2 lg:grid-cols-3'>
+        <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
+          <p className='text-2xl leading-normal '>
+            Share a real <Mark>testimonial</Mark>
+            that hits some of your benefits from one of your popular customer.
+          </p>
+
+          <Avatar
+            image={userOneImg}
+            name='Sarah Steiner'
+            title='VP Sales at Google'
+          />
+        </div>
+
         <div className=''>
           <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
             <p className='text-2xl leading-normal '>
@@ -52,7 +94,7 @@ export default function Testimonials() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 }

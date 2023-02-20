@@ -2,7 +2,7 @@ import { Disclosure, Transition } from '@headlessui/react';
 import React, { useState } from 'react';
 import { useForm, useWatch } from 'react-hook-form';
 
-export default function PopupWidget() {
+export default function PopupWidgetTop() {
   const {
     register,
     handleSubmit,
@@ -51,7 +51,7 @@ export default function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className='ease fixed right-5 bottom-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition duration-300 hover:bg-green-600 focus:bg-green-600 focus:outline-none'>
+            <Disclosure.Button className='ease fixed right-5 top-36 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-indigo-500 shadow-lg transition duration-300 hover:bg-indigo-600 focus:bg-indigo-600 focus:outline-none'>
               <span className='sr-only'>Open Contact form Widget</span>
               <Transition
                 show={!open}
