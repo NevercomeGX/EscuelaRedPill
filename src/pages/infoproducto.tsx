@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 
-const Navbar = dynamic(() => import('@/components/Infoproducto/NavBar'));
+// const Navbar = dynamic(() => import('@/components/Infoproducto/NavBar'));
 const Footer = dynamic(() => import('../components/Global/footer/footer'));
 
 import { benefitOne } from '../components/Infoproducto/data';
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <Seo templateTitle='ABC DE LA COMUNICACIÓN' />
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <Video />
       <Precios />
