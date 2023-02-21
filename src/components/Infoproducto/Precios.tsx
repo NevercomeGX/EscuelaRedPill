@@ -12,7 +12,9 @@ const Precios = () => {
           <p className='mt-4 mb-8 text-center text-lg '>
             Taller valorado segun expertos
           </p>
-          <p className='mb-8 text-center text-5xl text-red-600'>497 USD</p>
+          <p className='mb-8 text-center text-5xl text-red-600 line-through'>
+            497 USD
+          </p>
           <p className='mb-8 text-center text-lg '>
             Para ti por precio del primer lanzamiento{' '}
           </p>
