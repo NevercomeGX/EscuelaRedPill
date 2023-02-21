@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 
-const Navbar = dynamic(() => import('@/components/Infoproducto/NavBar'));
+const Navbar = dynamic(() => import('@/components/Infoproducto/navbar'));
 const Footer = dynamic(() => import('../components/Global/footer/footer'));
 
 import { benefitOne } from '../components/Infoproducto/data';
