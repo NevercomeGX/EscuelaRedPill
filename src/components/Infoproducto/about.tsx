@@ -14,10 +14,11 @@ export default function About() {
                 QUIEN ES JUAN LOPEZ ?
               </h3>
             </div>
+
             <div className='flex w-full items-center justify-center rounded-full lg:w-1/2'>
               <figure className='m-0 flex w-full justify-center py-0 px-[10px] pt-10 text-center align-middle '>
                 <Image
-                  src='/assets/162751374911.gif'
+                  src='/assets/juanlopez.png'
                   width='521'
                   height='482'
                   alt='Benefits'
@@ -33,6 +34,7 @@ export default function About() {
                 <h3 className='mt-3 hidden max-w-xl text-3xl font-bold  leading-snug tracking-tight text-white md:lg:flex lg:text-4xl lg:leading-tight'>
                   QUIEN ES JUAN LOPEZ ?
                 </h3>
+
                 <div className='flex w-full flex-col text-left text-lg lg:flex-col '>
                   <div className='my-2 w-[90%] rounded-t-full border-b-4 border-[#212121] py-2'></div>
 

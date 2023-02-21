@@ -1,4 +1,4 @@
-import benefitOneImg from '../../../public/assets/post-six.jpg';
+import benefitOneImg from '../../../public/assets/post-five.jpg';
 import benefitTwoImg from '../../../public/img/benefit-two.png';
 
 const benefitOne = {

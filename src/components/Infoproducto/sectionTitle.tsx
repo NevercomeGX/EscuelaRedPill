@@ -27,7 +27,7 @@ export default function SectionTitle(props: sectiontittle) {
           {props.title}
         </h2>
       )}
-      <div className={`my-2 w-1/3 border-b  border-${props.Textcolor}`}></div>
+
       {props.listado && props.lista ? (
         <ul className='space-y-4  px-6 pt-10 text-sm font-bold uppercase tracking-wider text-black'>
           {props.listado?.map((item, index) => (

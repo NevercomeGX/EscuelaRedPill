@@ -6,11 +6,12 @@ const Mainbenefits = () => {
       <section className='flex flex-col items-center justify-center '>
         <div className='relative mr-auto ml-auto flex max-w-7xl flex-col pt-12   '>
           <div className='flex min-h-[1px] w-full '>
-            <div className='mb-8 content-start p-3 text-center'>
+            <div className=' content-start p-3 text-center'>
               <h1>BENEFICIOS</h1>
             </div>
           </div>
         </div>
+
         <div className='flex w-full max-w-4xl flex-col text-center text-[#212121]'>
           <p className='px-10  pb-10 text-lg leading-normal  dark:text-gray-300 lg:text-xl xl:text-xl'>
             16 clases grupales en vivo que suman más de 24 horas con contenido

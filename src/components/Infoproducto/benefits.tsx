@@ -10,10 +10,19 @@ export default function Benefits(props: any) {
     <>
       <Container className='my-20 flex flex-wrap px-6 md:lg:px-10 lg:flex-nowrap lg:gap-10 '>
         <div
-          className={`flex w-full items-center justify-center lg:w-1/2 ${
+          className={`flex w-full flex-col items-center justify-center lg:w-1/2 lg:flex-row ${
             props.imgPos === 'right' ? 'lg:order-1' : ''
           }`}
         >
+          <div className='flex w-full flex-col pr-6 text-left lg:hidden'>
+            <h3 className='mt-3 max-w-xl text-3xl font-bold leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
+              {data.title}
+            </h3>
+
+            <p className='max-w-xl py-4 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-xl'>
+              {data.desc}
+            </p>
+          </div>
           <div>
             <Image
               src={data.image}
@@ -22,6 +31,7 @@ export default function Benefits(props: any) {
               alt='Benefits'
               layout='intrinsic'
               placeholder='blur'
+              className='rounded-3xl'
             />
           </div>
         </div>
@@ -32,7 +42,7 @@ export default function Benefits(props: any) {
           }`}
         >
           <div>
-            <div className='flex w-full flex-col pr-6 text-left'>
+            <div className=' hidden w-full flex-col pr-6 text-left lg:flex'>
               <h3 className='mt-3 max-w-xl text-3xl font-bold leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
                 {data.title}
               </h3>
