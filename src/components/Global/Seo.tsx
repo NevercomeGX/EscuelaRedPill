@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Script from 'next/script';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
@@ -85,7 +84,7 @@ export default function Seo(props: SeoProps) {
       <meta name='msapplication-config' content='/favicon/browserconfig.xml' />
       <meta name='theme-color' content='#ffffff' />
 
-      <div className='container'>
+      {/* <div className='container'>
         <Script id='google-analytics' strategy='afterInteractive'>
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -112,7 +111,7 @@ export default function Seo(props: SeoProps) {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
-      </div>
+      </div> */}
     </Head>
   );
 }
