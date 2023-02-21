@@ -5,11 +5,7 @@ export default function Hero() {
     <>
       <Container className='flex  '>
         <div className='flex w-full items-center justify-center pt-10  '>
-          <div className='mb-8 max-w-2xl justify-center text-center'>
-            <h1 className='text-center text-4xl font-bold leading-snug tracking-tight text-gray-800 dark:text-white lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight'>
-              ABC DE LA COMUNICACIÓN
-            </h1>
-
+          <div className='mb-8 max-w-5xl justify-center text-center'>
             <p className='py-5 text-xl leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-2xl'>
               Convierte en un experto en habilidades sociales, desarrolla
               inteligencia emocional y mejora tu autoestima para que puedas
@@ -22,7 +18,7 @@ export default function Hero() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <button className=' my-8 w-80 rounded-md bg-green-600 py-4 text-center text-lg font-bold text-white md:w-96 '>
+                <button className=' my-8 w-80 rounded-md bg-green-600 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105 md:w-96 '>
                   ¡INSCRIBETE AHORA!
                 </button>
               </a>

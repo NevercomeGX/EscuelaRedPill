@@ -17,7 +17,9 @@ export default function SectionTitle(props: sectiontittle) {
   return (
     <Container
       className={`my-16 flex w-full flex-col bg-[#212121]  ${
-        props.align === 'left' ? '' : 'items-center justify-center text-center '
+        props.align === 'left'
+          ? ''
+          : 'items-center justify-center px-6 text-center '
       }`}
     >
       <h2 className='mt-3 max-w-2xl text-3xl font-bold leading-snug tracking-tight text-white dark:text-white lg:text-4xl lg:leading-tight'>

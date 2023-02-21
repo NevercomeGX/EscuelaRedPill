@@ -27,6 +27,8 @@ const PopupWidgetTop = dynamic(
   () => import('../components/Infoproducto/popupWidgetTop')
 );
 
+const About = dynamic(() => import('@/components/Infoproducto/about'));
+
 import Precios from '../components/Infoproducto/Precios';
 
 export default function Home() {
@@ -36,6 +38,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Video />
+      <About />
       <Precios />
       <Mainbenefits />
       <SectionTitle
@@ -54,15 +57,9 @@ export default function Home() {
 
       <Benefits data={benefitOne} />
       <Testimonials />
-      {/* <SectionTitle align='' pretitle='FAQ' title='Frequently Asked Questions'>
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle> */}
-      {/* <Faq /> */}
-      {/* <Cta /> */}
       <Footer />
       <PopupWidget />
-      <PopupWidgetTop />
+      {/* <PopupWidgetTop /> */}
     </>
   );
 }

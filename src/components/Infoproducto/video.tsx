@@ -5,10 +5,10 @@ import Container from './container';
 export default function Video() {
   const [playVideo, setPlayVideo] = useState(false);
   return (
-    <Container className=' pb-16 lg:mx-[38rem]  '>
+    <Container className=' px-6 pb-16 lg:mx-[38rem]  '>
       <div
         onClick={() => setPlayVideo(!playVideo)}
-        className='aspect-w-16 aspect-h-9 relative cursor-pointer bg-indigo-300 bg-gradient-to-tr from-purple-400 to-indigo-700 '
+        className='aspect-w-16 aspect-h-9 relative cursor-pointer bg-gray-300 bg-gradient-to-tr from-gray-400 to-gray-700 '
       >
         {!playVideo && (
           <button className='absolute inset-auto top-1/2 left-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 transform text-white lg:h-28 lg:w-28'>

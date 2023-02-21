@@ -8,7 +8,7 @@ export default function Benefits(props: any) {
 
   return (
     <>
-      <Container className='my-20 flex flex-wrap lg:flex-nowrap lg:gap-10 '>
+      <Container className='my-20 flex flex-wrap px-6 md:lg:px-10 lg:flex-nowrap lg:gap-10 '>
         <div
           className={`flex w-full items-center justify-center lg:w-1/2 ${
             props.imgPos === 'right' ? 'lg:order-1' : ''
@@ -32,24 +32,21 @@ export default function Benefits(props: any) {
           }`}
         >
           <div>
-            <div className='mt-4 flex w-full flex-col text-center'>
+            <div className='flex w-full flex-col pr-6 text-left'>
               <h3 className='mt-3 max-w-xl text-3xl font-bold leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
                 {data.title}
               </h3>
-              <div className='my-2 w-[90%] rounded-t-full border-b-4 border-[#212121] py-2'></div>
 
               <p className='max-w-xl py-4 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-xl'>
                 {data.desc}
               </p>
             </div>
 
-            <div className='mt-5 w-full'>
-              {data.bullets.map((item: any, index: any) => (
-                <Benefit key={index} title={item.title} icon={item.icon}>
-                  {item.desc}
-                </Benefit>
-              ))}
-            </div>
+            {data.bullets.map((item: any, index: any) => (
+              <Benefit key={index} title={item.title} icon={item.icon}>
+                {item.desc}
+              </Benefit>
+            ))}
           </div>
         </div>
       </Container>

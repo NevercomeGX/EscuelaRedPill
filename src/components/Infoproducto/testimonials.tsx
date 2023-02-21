@@ -6,13 +6,13 @@ import Container from './container';
 
 export default function Testimonials() {
   return (
-    <Container className=''>
+    <Container className='px-6'>
       <div className='flex min-h-[1px] w-full justify-center '>
-        <div className='mb-8 content-start p-3 text-center'>
+        <div className='mb-8 content-start text-center'>
           <h1>TESTIMONIOS</h1>
         </div>
       </div>
-      <div className=' grid grid-cols-1  gap-4 px-5  sm:grid-cols-2 md:lg:px-56 lg:grid-cols-3'>
+      <div className=' grid grid-cols-1  gap-4 sm:grid-cols-2 lg:grid-cols-3  lg:px-24'>
         <Card />
         <Card />
         <Card />

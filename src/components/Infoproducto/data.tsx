@@ -1,4 +1,4 @@
-import benefitOneImg from '../../../public/img/benefit-one.png';
+import benefitOneImg from '../../../public/assets/post-six.jpg';
 import benefitTwoImg from '../../../public/img/benefit-two.png';
 
 const benefitOne = {
@@ -11,31 +11,31 @@ const benefitOne = {
     {
       title:
         '⦁	El curso iniciara el martes 7 de marzo y finalizara el 21 de abril del 2023.',
-      desc: '	El curso iniciara el martes 7 de marzo y finalizara el 21 de abril del 2023.',
+      desc: '',
     },
     {
       title:
         '⦁	Las clases se harán los días martes y viernes a las 18:00 hora Bogotá, Colombia durante 8 semanas. ',
-      desc: 'Here you can add the next benefit point.',
+      desc: '',
     },
     {
       title: '⦁	Cada sesión tendrá una duración aproximada de 90 minutos. ',
-      desc: 'This will be your last bullet point in this section.',
+      desc: '',
     },
     {
       title:
         '⦁	Se hará uso de la plataforma ZOOM para dar acceso a los inscritos. ',
-      desc: 'This will be your last bullet point in this section.',
+      desc: '',
     },
     {
       title:
         '⦁	Tendrás acceso al grupo VIP de la comunidad de Escuela Red Pill donde podrás hacer preguntas en tiempo real',
-      desc: 'This will be your last bullet point in this section.',
+      desc: '',
     },
     {
       title:
         '⦁	Las clases serán grabadas y subidas 48 horas después de para que tengas acceso de por vida.',
-      desc: 'This will be your last bullet point in this section.',
+      desc: '',
     },
   ],
 };
@@ -49,15 +49,15 @@ const benefitTwo = {
   bullets: [
     {
       title: 'Te sentirás suficiente',
-      desc: 'Te sentirás suficiente para vivir o experimentar relaciones interpersonales y de pareja con personas de alto valor.',
+      desc: '.',
     },
     {
       title: 'Mejorarán tus relaciones  con las personas',
-      desc: 'Mejorarán tus relaciones con las personas, tu entorno y tu pareja de tal manera que tengas una vida abundante.',
+      desc: '',
     },
     {
       title: 'Dark & Light Mode',
-      desc: 'Nextly comes with a zero-config light & dark mode. ',
+      desc: '',
     },
   ],
 };
