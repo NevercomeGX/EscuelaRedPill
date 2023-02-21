@@ -80,7 +80,7 @@ export default function Testimonials() {
             />
           </div>
         </div>
-        <div className=''>
+        <divs className=''>
           <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
             <p className='text-2xl leading-normal '>
               This is an <Mark>awesome</Mark> landing page template I've seen. I
@@ -93,7 +93,7 @@ export default function Testimonials() {
               title='Co-founder of Acme Inc'
             />
           </div>
-        </div>
+        </divs>
       </div> */}
     </Container>
   );
