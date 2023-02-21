@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 
-// const Navbar = dynamic(() => import('@/components/Infoproducto/NavBar'));
+const Navbar = dynamic(() => import('@/components/Infoproducto/NavBar'));
 const Footer = dynamic(() => import('../components/Global/footer/footer'));
 
 import { benefitOne } from '../components/Infoproducto/data';
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <Seo templateTitle='ABC DE LA COMUNICACIÓN' />
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <Video />
       <Precios />
@@ -51,25 +51,6 @@ export default function Home() {
         ]}
       ></SectionTitle>
       <Garantia />
-      {/* <SectionTitle
-        className='bg-[#212121] '
-        Textcolor='text-white'
-        align=''
-        pretitle=''
-        title=' GARANTIA'
-      >
-        ¡No te preocupes! Si no estas a gusto recuerda que contamos con una
-        garantía de 7 días para "ABC de la Comunicación", puedes hacerlo
-        fácilmente enviando un correo electrónico al equipo de la Escuela Red
-        Pill. En el correo electrónico, asegúrate de incluir tu nombre y
-        dirección de correo electrónico asociada con la compra, la fecha de la
-        compra, la razón por la que deseas una devolución y confirma que
-        entiendes los términos y condiciones de la garantía de devolución de 7
-        días. El equipo de soporte del curso procesará tu solicitud de
-        devolución y te enviará una confirmación una vez que se haya realizado
-        el reembolso. Por supuesto, es posible que debas proporcionar
-        información adicional para completar el proceso de devolución.
-      </SectionTitle> */}
 
       <Benefits data={benefitOne} />
       <Testimonials />

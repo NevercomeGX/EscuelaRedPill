@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import '@fontsource/raleway';
-const NavBar = () => {
+export default function Navbar() {
   return (
     <nav className=' backdrop  left-0 top-0 z-10 w-full bg-[#212121]/90 backdrop-blur-md  duration-300  ease-in  '>
       <div className='flex flex-col items-center  justify-center gap-10   text-white'>
@@ -34,6 +34,4 @@ const NavBar = () => {
       </div>
     </nav>
   );
-};
-
-export default NavBar;
+}
