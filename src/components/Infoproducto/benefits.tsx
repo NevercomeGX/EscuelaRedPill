@@ -29,7 +29,6 @@ export default function Benefits(props: any) {
               width='521'
               height='482'
               alt='Benefits'
-              layout='intrinsic'
               placeholder='blur'
               className='rounded-3xl'
             />

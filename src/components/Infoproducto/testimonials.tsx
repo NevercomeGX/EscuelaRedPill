@@ -14,88 +14,28 @@ export default function Testimonials() {
       </div>
 
       <div className=' grid grid-cols-1  gap-4 sm:grid-cols-2 lg:grid-cols-3  lg:px-24'>
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          src='https://www.youtube.com/embed/h2tdPryUtGo'
+          nombre='Jose Campana - Colombia 	🇨🇴'
+          testimonio='"El Doctor Juan me ayudo muchísimo! porque estaba a punto de entrar en una relación potencialmente muy toxica, el es un profesional único y acá en Colombia no se encuentra".'
+        />
+        <Card
+          src='https://www.youtube.com/embed/8lugh-nX9pU'
+          nombre='Rodrigo Cuevas - Chile'
+          testimonio='"He Recibido Asesoría y mentoría de Juan y me ha sido muy preciso y orientado al resultado, es un servicio de calidad y lo recomiendo totalmente!".'
+        />{' '}
+        <Card
+          src='https://www.youtube.com/embed/h2tdPryUtGo'
+          nombre='Jose Campana'
+          testimonio='"El Doctor Juan me ayudo muchísimo! porque estaba a punto de entrar en una relación potencialmente muy toxica, el es un profesional único y acá en Colombia no se encuentra".'
+        />
       </div>
 
-      {/* <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100   dark:bg-trueGray-800'>
-            {' '}
-            <iframe
-              src='https://www.youtube.com/embed/LHf2KqT3g4U'
-              title=''
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
-              className='h-full w-full rounded-2xl  '
-            ></iframe>
-          </div>
-        </div>
-        <div className='lg:col-span-2 xl:col-auto'>
-          <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 dark:bg-trueGray-800'>
-            {' '}
-            <iframe
-              src='https://www.youtube.com/embed/LHf2KqT3g4U'
-              title=''
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
-              className='h-full w-full rounded-2xl'
-            ></iframe>
-          </div>
-        </div>
-        <div className='lg:col-span-2 xl:col-auto'>
-          <div className='4 flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 dark:bg-trueGray-800'>
-            {' '}
-            <iframe
-              src='https://www.youtube.com/embed/LHf2KqT3g4U'
-              title=''
-              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-              allowFullScreen
-              className='h-full w-full rounded-2xl'
-            ></iframe>
-          </div>*/}
-      {/* <div className=' mx-12 grid grid-cols-1 gap-4 object-center sm:grid-cols-2 lg:grid-cols-3'>
-        <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
-          <p className='text-2xl leading-normal '>
-            Share a real <Mark>testimonial</Mark>
-            that hits some of your benefits from one of your popular customer.
-          </p>
-
-          <Avatar
-            image={userOneImg}
-            name='Sarah Steiner'
-            title='VP Sales at Google'
-          />
-        </div>
-
-        <div className=''>
-          <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
-            <p className='text-2xl leading-normal '>
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
-            </p>
-
-            <Avatar
-              image={userTwoImg}
-              name='Dylan Ambrose'
-              title='Lead marketer at Netflix'
-            />
-          </div>
-        </div>
-        <divs className=''>
-          <div className='flex h-full w-full flex-col justify-between rounded-2xl bg-gray-100 px-14 py-14 dark:bg-trueGray-800'>
-            <p className='text-2xl leading-normal '>
-              This is an <Mark>awesome</Mark> landing page template I've seen. I
-              would use this for anything.
-            </p>
-
-            <Avatar
-              image={userThreeImg}
-              name='Gabrielle Winn'
-              title='Co-founder of Acme Inc'
-            />
-          </div>
-        </divs>
-      </div> */}
+      <div className='flex flex-col items-center justify-center space-y-3 sm:flex-row sm:items-center sm:space-x-4 sm:space-y-0'>
+        <button className=' my-8 rounded-full bg-green-600 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105 lg:w-[36rem] '>
+          ¡NO ESPERES MAS E INSCRIBETE AHORA!
+        </button>
+      </div>
     </Container>
   );
 }

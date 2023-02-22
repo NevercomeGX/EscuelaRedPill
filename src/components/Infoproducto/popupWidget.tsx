@@ -51,7 +51,7 @@ export default function PopupWidget() {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className='ease fixed right-5 bottom-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition duration-300 hover:bg-green-600 focus:bg-green-600 focus:outline-none'>
+            <Disclosure.Button className='ease fixed top-[36rem] right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 shadow-lg transition duration-300 hover:bg-green-600 focus:bg-green-600 focus:outline-none'>
               <span className='sr-only'>Open Contact form Widget</span>
               <Transition
                 show={!open}
@@ -59,22 +59,9 @@ export default function PopupWidget() {
                 enterFrom='opacity-0 -rotate-45 scale-75'
                 leave='transition duration-100 transform ease'
                 leaveTo='opacity-0 -rotate-45'
-                className='absolute h-6 w-6 text-white'
+                className='absolute h-8 w-8 text-white'
               >
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-6 w-6'
-                  width='24'
-                  height='24'
-                  viewBox='0 0 24 24'
-                  fill='none'
-                  stroke='currentColor'
-                  strokeWidth='2'
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                >
-                  <path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'></path>
-                </svg>{' '}
+                <img src='https://img.icons8.com/color/240/null/whatsapp--v1.png' />
               </Transition>
 
               <Transition
