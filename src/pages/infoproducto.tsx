@@ -12,8 +12,7 @@ const Benefits = dynamic(() => import('../components/Infoproducto/benefits'));
 const Testimonials = dynamic(
   () => import('../components/Infoproducto/testimonials')
 );
-const Cta = dynamic(() => import('../components/Infoproducto/cta'));
-const Faq = dynamic(() => import('../components/Infoproducto/faq'));
+
 const Garantia = dynamic(() => import('../components/Infoproducto/garantia'));
 const Mainbenefits = dynamic(
   () => import('../components/Infoproducto/mainbenefits')
@@ -23,13 +22,9 @@ const PopupWidget = dynamic(
   () => import('../components/Infoproducto/popupWidget')
 );
 
-const PopupWidgetTop = dynamic(
-  () => import('../components/Infoproducto/popupWidgetTop')
-);
-
 const About = dynamic(() => import('@/components/Infoproducto/about'));
 
-import Precios from '../components/Infoproducto/Precios';
+// import Precios from '../components/Infoproducto/Precios';
 
 export default function Home() {
   return (
@@ -39,7 +34,7 @@ export default function Home() {
       <Hero />
       <Video />
       <About />
-      <Precios />
+      {/* <Precios /> */}
       <Mainbenefits />
       <SectionTitle
         align=''
@@ -57,9 +52,10 @@ export default function Home() {
 
       <Benefits data={benefitOne} />
       <Testimonials />
+
       <Footer />
+
       <PopupWidget />
-      <PopupWidgetTop />
     </>
   );
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface CardProps {
-  src?: string;
-  nombre: string;
-  testimonio: string;
+  src: string;
+  nombre?: string;
+  testimonio?: string;
 }
 
 const Card: React.FC<CardProps> = ({ src, nombre, testimonio }) => {

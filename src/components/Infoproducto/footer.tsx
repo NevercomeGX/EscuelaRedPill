@@ -17,7 +17,7 @@ export default function Footer() {
               <Link legacyBehavior href='/'>
                 <a className='flex items-center space-x-2 text-2xl font-medium text-black dark:text-gray-100'>
                   <span>
-                    <img
+                    <Image
                       src='/img/logo.svg'
                       alt='N'
                       width='32'

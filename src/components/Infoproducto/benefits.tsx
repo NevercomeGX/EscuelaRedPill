@@ -15,7 +15,7 @@ export default function Benefits(props: any) {
           }`}
         >
           <div className='flex w-full flex-col pr-6 text-left lg:hidden'>
-            <h3 className='mt-3 max-w-xl text-3xl font-bold leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
+            <h3 className='mt-3 max-w-xl text-3xl  leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
               {data.title}
             </h3>
 
@@ -42,7 +42,7 @@ export default function Benefits(props: any) {
         >
           <div>
             <div className=' hidden w-full flex-col pr-6 text-left lg:flex'>
-              <h3 className='mt-3 max-w-xl text-3xl font-bold leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
+              <h3 className='mt-3 max-w-xl text-3xl  leading-snug tracking-tight text-[#212121] dark:text-white lg:text-4xl lg:leading-tight'>
                 {data.title}
               </h3>
 
@@ -69,7 +69,7 @@ function Benefit(props: any) {
       <div className='mt-4 flex max-w-2xl items-center '>
         {/* <div className='mt-1 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 '></div> */}
 
-        <h4 className='text-xl font-medium text-gray-800 dark:text-gray-200'>
+        <h4 className='text-xl font-light text-black dark:text-gray-200  lg:leading-tight'>
           {props.title}
         </h4>
       </div>

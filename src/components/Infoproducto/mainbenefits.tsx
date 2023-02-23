@@ -1,9 +1,10 @@
+import Image from 'next/image';
 import * as React from 'react';
 
 const Mainbenefits = () => {
   return (
     <>
-      <section className='flex flex-col items-center justify-center '>
+      <section className='flex flex-col items-center justify-center pt-12 '>
         <div className='relative mr-auto ml-auto flex max-w-7xl flex-col pt-12   '>
           <div className='flex min-h-[1px] w-full '>
             <div className=' content-start p-3 text-center'>
@@ -27,7 +28,13 @@ const Mainbenefits = () => {
               <div className=' mb-4 mr-auto ml-auto text-center'>
                 {' '}
                 <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black  '>
-                  <img src='https://img.icons8.com/material-rounded/96/000000/arms-up.png' />
+                  <Image
+                    alt=''
+                    height={150}
+                    width={150}
+                    loading='lazy'
+                    src='https://img.icons8.com/material-rounded/96/000000/arms-up.png'
+                  />
                 </div>
               </div>
             </div>
@@ -37,7 +44,7 @@ const Mainbenefits = () => {
                 Vencerás tu timidez.{' '}
               </h3>
               <p>
-                desarrollaras una confianza sólida y te comunicarás con
+                Desarrollaras una confianza sólida y te comunicarás con
                 facilidad.
               </p>
             </div>
@@ -47,17 +54,23 @@ const Mainbenefits = () => {
               <div className=' mb-4 mr-auto ml-auto text-center'>
                 {' '}
                 <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black  '>
-                  <img src='https://img.icons8.com/ios-filled/100/null/helping-hand.png' />
+                  <Image
+                    alt=''
+                    height={150}
+                    width={150}
+                    loading='lazy'
+                    src='https://img.icons8.com/ios-filled/100/null/helping-hand.png'
+                  />
                 </div>
               </div>
             </div>
             <div className='text-center'>
               <h3 className='text-md text-[#212121] lg:text-lg'>
                 {' '}
-                Serás capaz de mantener relaciones sociales.{' '}
+                Mantendrás relaciones sociales y de pareja.{' '}
               </h3>
               <p>
-                amistades y te sentirás cómodo en espacios públicos y grupos de
+                Amistades y te sentirás cómodo en espacios públicos y grupos de
                 personas.
               </p>
             </div>
@@ -67,7 +80,13 @@ const Mainbenefits = () => {
               <div className=' mb-4 mr-auto ml-auto text-center'>
                 {' '}
                 <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black  '>
-                  <img src='https://img.icons8.com/sf-regular-filled/96/null/date.png' />
+                  <Image
+                    alt=''
+                    height={150}
+                    width={150}
+                    loading='lazy'
+                    src='https://img.icons8.com/sf-regular-filled/96/null/date.png'
+                  />
                 </div>
               </div>
             </div>
@@ -77,7 +96,7 @@ const Mainbenefits = () => {
                 Mejorarán tus relaciones con las mujeres.{' '}
               </h3>
               <p>
-                hablarás con seguridad y serás capaz de expresar lo que piensas.{' '}
+                Hablarás con seguridad y serás capaz de expresar lo que piensas.{' '}
               </p>
             </div>
           </div>
@@ -89,7 +108,13 @@ const Mainbenefits = () => {
               <div className='relative flex max-w-xl items-center justify-center  gap-4  py-3 '>
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black '>
-                    <img src='https://img.icons8.com/external-bearicons-glyph-bearicons/64/null/external-No-yes-or-no-bearicons-glyph-bearicons.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/external-bearicons-glyph-bearicons/64/null/external-No-yes-or-no-bearicons-glyph-bearicons.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
@@ -97,7 +122,7 @@ const Mainbenefits = () => {
                     Aprenderás a decir que NO
                   </h3>
                   <p>
-                    poner un limites en tu relación para evitar que pasen por
+                    Poner un limites en tu relación para evitar que pasen por
                     encima de tu dignidad y de tu amor propio.
                   </p>
                 </div>
@@ -107,7 +132,13 @@ const Mainbenefits = () => {
               <div className='relative flex max-w-xl items-center justify-center  gap-4  py-3 '>
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black'>
-                    <img src='https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/null/external-capability-due-diligence-icongeek26-glyph-icongeek26.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/null/external-capability-due-diligence-icongeek26-glyph-icongeek26.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
@@ -126,7 +157,13 @@ const Mainbenefits = () => {
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   {' '}
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black '>
-                    <img src='https://img.icons8.com/ios-filled/100/null/demand.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/ios-filled/100/null/demand.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
@@ -149,7 +186,13 @@ const Mainbenefits = () => {
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   {' '}
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black'>
-                    <img src='https://img.icons8.com/sf-regular-filled/96/null/fortune-teller.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/sf-regular-filled/96/null/fortune-teller.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
@@ -158,8 +201,8 @@ const Mainbenefits = () => {
                     Te sentirás suficiente.{' '}
                   </h3>
                   <p>
-                    Mejorarán tus relaciones con las personas, tu entorno y tu
-                    pareja de tal manera que tengas una vida abundante.
+                    Te sentirás suficiente para vivir o experimentar relaciones
+                    interpersonales y de pareja con personas de alto valor.
                   </p>
                 </div>
               </div>
@@ -169,7 +212,13 @@ const Mainbenefits = () => {
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   {' '}
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black'>
-                    <img src='https://img.icons8.com/sf-regular-filled/96/null/friends.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/sf-regular-filled/96/null/friends.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
@@ -189,7 +238,13 @@ const Mainbenefits = () => {
                 <div className=' mb-4 mr-auto ml-auto text-center'>
                   {' '}
                   <div className='mt-5 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-md border-2 border-black'>
-                    <img src='https://img.icons8.com/sf-regular-filled/96/null/conference-background-selected.png' />
+                    <Image
+                      alt=''
+                      height={150}
+                      width={150}
+                      loading='lazy'
+                      src='https://img.icons8.com/sf-regular-filled/96/null/conference-background-selected.png'
+                    />
                   </div>
                 </div>
                 <div className='text-left '>
