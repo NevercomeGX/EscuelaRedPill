@@ -2,12 +2,13 @@ import Container from './container';
 
 export default function Video() {
   return (
-    <Container className=' px-6 pb-16 lg:mx-[38rem]  '>
-      <div
-        // onClick={() => setPlayVideo(!playVideo)}
-        className='aspect-w-16 aspect-h-9 relative cursor-pointer bg-gray-300 bg-gradient-to-tr from-gray-400 to-gray-700 '
-      >
-        {/* {!playVideo && (
+    <Container className='  '>
+      <div className='mx-auto mb-16 w-full max-w-4xl overflow-hidden rounded-2xl px-10 lg:mb-20  '>
+        <div
+          // onClick={() => setPlayVideo(!playVideo)}
+          className='aspect-w-16 aspect-h-9 relative cursor-pointer'
+        >
+          {/* {!playVideo && (
           <button className='absolute inset-auto top-1/2 left-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 transform text-white lg:h-28 lg:w-28'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -25,12 +26,14 @@ export default function Video() {
           </button>
         )}
         {playVideo && ( */}
-        <iframe
-          src='https://www.youtube.com/embed/LHf2KqT3g4U'
-          title='YouTube video player'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          allowFullScreen
-        ></iframe>
+          <iframe
+            src='https://www.youtube.com/embed/LHf2KqT3g4U'
+            title='YouTube video player'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+            allowFullScreen
+            className=' h-full w-full '
+          ></iframe>
+        </div>
         {/* )} */}
       </div>
     </Container>

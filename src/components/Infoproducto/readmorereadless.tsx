@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 interface ReadMoreReadLessProps {
   limit: number;
-  children?: React.ReactNode;
+  children?: string[];
 }
 
 const ReadMoreReadLess = ({ limit, children }: ReadMoreReadLessProps) => {
@@ -14,23 +14,26 @@ const ReadMoreReadLess = ({ limit, children }: ReadMoreReadLessProps) => {
 
   let content = null;
 
-  if (children) {
+  if (children && children.length > 0) {
     const truncatedContent = isReadMoreShown
       ? children
-      : `${children}`.substr(0, limit);
-    content = (
-      <p className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'>
-        {truncatedContent}
+      : children.slice(0, limit);
+    content = truncatedContent.map((paragraph, index) => (
+      <p
+        key={index}
+        className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'
+      >
+        {paragraph}
       </p>
-    );
+    ));
   }
 
   return (
     <div>
       {content}
-      {children && (
-        <button className='text-white underline' onClick={toggleBtn}>
-          {isReadMoreShown ? 'Read Less' : '...Read More'}
+      {children && children.length > limit && (
+        <button className='text-blue-600 underline' onClick={toggleBtn}>
+          {isReadMoreShown ? 'Leer menos' : '...Leer más'}
         </button>
       )}
     </div>

@@ -36,7 +36,7 @@ const Precios = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <button className=' mt-4 mb-12 rounded-full bg-green-600 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105 lg:w-[36rem] '>
+            <button className='m-8 rounded-full bg-green-600 py-4 px-8 text-center  text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105  '>
               ¡NO ESPERES MAS E INSCRIBETE AHORA!
             </button>
           </a>

@@ -6,7 +6,7 @@ export default function Hero() {
       <Container className='flex  '>
         <div className='flex w-full items-center justify-center pt-10  '>
           <div className='mb-8 max-w-4xl justify-center text-center'>
-            <p className='py-2 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-2xl'>
+            <p className='mx-8 py-2 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-2xl'>
               Convierte en un experto en habilidades sociales, desarrolla
               inteligencia emocional y mejora tu autoestima para que puedas
               expresarte con confianza en cualquier situación social y laboral.
