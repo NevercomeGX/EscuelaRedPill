@@ -8,7 +8,7 @@ export default function Benefits(props: any) {
 
   return (
     <>
-      <Container className='my-20 flex flex-wrap px-6 md:lg:px-10 lg:flex-nowrap lg:gap-10 '>
+      <Container className='mb-32 mt-[-2rem] flex flex-wrap px-6 md:lg:px-10 lg:flex-nowrap lg:gap-10 '>
         <div
           className={`flex w-full flex-col items-center justify-center lg:w-1/2 lg:flex-row ${
             props.imgPos === 'right' ? 'lg:order-1' : ''
