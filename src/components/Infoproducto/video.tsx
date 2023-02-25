@@ -1,16 +1,14 @@
-import { useState } from 'react';
-
 import Container from './container';
 
 export default function Video() {
-  const [playVideo, setPlayVideo] = useState(false);
   return (
-    <Container className=' pb-16 lg:mx-[38rem]  '>
-      <div
-        onClick={() => setPlayVideo(!playVideo)}
-        className='aspect-w-16 aspect-h-9 relative cursor-pointer bg-indigo-300 bg-gradient-to-tr from-purple-400 to-indigo-700 '
-      >
-        {!playVideo && (
+    <Container className='  '>
+      <div className='mx-auto mb-10 w-full max-w-4xl overflow-hidden rounded-2xl px-10 lg:mb-20 lg:-mt-[10px]  '>
+        <div
+          // onClick={() => setPlayVideo(!playVideo)}
+          className='aspect-w-16 aspect-h-9 relative cursor-pointer'
+        >
+          {/* {!playVideo && (
           <button className='absolute inset-auto top-1/2 left-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 transform text-white lg:h-28 lg:w-28'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -27,14 +25,16 @@ export default function Video() {
             <span className='sr-only'>Play Video</span>
           </button>
         )}
-        {playVideo && (
+        {playVideo && ( */}
           <iframe
-            src='https://www.youtube.com/embed/LHf2KqT3g4U'
+            src='https://www.youtube.com/embed/m7lo3rKE84Y'
             title='YouTube video player'
             allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
             allowFullScreen
+            className=' h-full w-full '
           ></iframe>
-        )}
+        </div>
+        {/* )} */}
       </div>
     </Container>
   );

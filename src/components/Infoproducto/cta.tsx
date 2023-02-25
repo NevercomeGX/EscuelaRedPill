@@ -5,7 +5,7 @@ import Container from './container';
 export default function Cta() {
   return (
     <Container>
-      <div className='mx-auto flex w-full max-w-4xl flex-wrap items-center justify-between gap-5 rounded-xl bg-indigo-600 px-7 py-7 text-white lg:flex-nowrap lg:px-12 lg:py-12'>
+      <div className='mx-auto flex w-full max-w-4xl flex-wrap items-center justify-between gap-5 rounded-xl bg-indigo-600  py-7 text-white lg:flex-nowrap lg:px-12 lg:py-12'>
         <div className='flex-grow text-center lg:text-left'>
           <h2 className='text-2xl font-medium lg:text-3xl'>
             Ready to try-out this template?

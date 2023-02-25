@@ -1,6 +1,11 @@
 import React from 'react';
 
-export default function Container(props: any) {
+interface ContainerProps {
+  className?: string;
+  children: React.ReactNode;
+}
+
+export default function Container(props: ContainerProps) {
   return (
     <div className={` xl:px-0 ${props.className ? props.className : ''}`}>
       {props.children}
