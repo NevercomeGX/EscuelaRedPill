@@ -93,7 +93,7 @@ export default function About() {
               </p>
 
               <p className='bg max-w-xl pb-6 text-center text-2xl text-green-500 underline'>
-                Inscribete con un 32% de descuento.
+                Inscribete con un 68% de descuento.
               </p>
               <div className='mb-8 '>
                 <p className='bg max-w-xl text-center text-lg text-white'>
