@@ -3,7 +3,7 @@ import Container from './container';
 export default function Video() {
   return (
     <Container className='  '>
-      <div className='mx-auto mb-16 w-full max-w-4xl overflow-hidden rounded-2xl px-10 lg:mb-20 lg:-mt-[10px]  '>
+      <div className='mx-auto mb-10 w-full max-w-4xl overflow-hidden rounded-2xl px-10 lg:mb-20 lg:-mt-[10px]  '>
         <div
           // onClick={() => setPlayVideo(!playVideo)}
           className='aspect-w-16 aspect-h-9 relative cursor-pointer'

@@ -2,7 +2,7 @@ import benefitOneImg from '../../../public/assets/INFOMERCIAL1.png';
 import benefitTwoImg from '../../../public/img/benefit-two.png';
 
 const benefitOne = {
-  title: 'CÓMO FUNCIONAN LAS CLASES',
+  title: '¿CÓMO FUNCIONAN LAS CLASES?',
   desc: '',
   cuadros: true,
   align: 'right',

@@ -4,8 +4,8 @@ export default function Hero() {
   return (
     <>
       <Container className='flex  '>
-        <div className='flex w-full items-center justify-center pt-10  '>
-          <div className='mb-8 max-w-4xl justify-center text-center'>
+        <div className='flex w-full items-center justify-center pt-4 lg:pt-10  '>
+          <div className='max-w-4xl justify-center text-center lg:mb-8'>
             <p className='mx-8 py-2 text-lg leading-normal text-gray-500 dark:text-gray-300 lg:text-xl xl:text-2xl'>
               Convierte en un experto en habilidades sociales, desarrolla
               inteligencia emocional y mejora tu autoestima para que puedas
@@ -18,7 +18,7 @@ export default function Hero() {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <button className=' my-8 w-80 rounded-md bg-green-600 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105 md:w-96 '>
+                <button className=' mb-5 w-80 rounded-md bg-green-600 py-4 text-center text-lg font-bold text-white shadow-lg shadow-green-800 transition-all hover:scale-105 md:w-96 lg:my-8 '>
                   ¡INSCRIBETE AHORA!
                 </button>
               </a>

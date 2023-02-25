@@ -12,7 +12,7 @@ export default function About() {
           <div className='flex flex-col text-center lg:flex-row '>
             <div className='flex justify-center'>
               <h3 className='mt-3  max-w-xl text-[1.785rem] font-bold  leading-snug tracking-tight text-white md:lg:hidden lg:text-4xl lg:leading-tight'>
-                QUIEN ES JUAN LOPEZ ?
+                ¿QUIEN ES JUAN LOPEZ?
               </h3>
             </div>
 
@@ -33,28 +33,17 @@ export default function About() {
             >
               <div className=' text-center'>
                 <h3 className='mt-3 hidden max-w-xl text-3xl font-bold  leading-snug tracking-tight text-white md:lg:flex lg:text-4xl lg:leading-tight'>
-                  ¿QUIEN ES JUAN LOPEZ ?
+                  ¿QUIEN ES JUAN LOPEZ?
                 </h3>
 
                 <div className='flex w-full flex-col text-left text-lg lg:flex-col '>
                   <div className='my-2 w-[90%] rounded-t-full border-b-2 border-[#fff] py-2'></div>
 
-                  <p className='  py-2    leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'>
-                    Juan Lopez es un psicólogo profesional y consultor
-                    especializado en habilidades sociales, relaciones
-                    interpersonales y de pareja. Nació en Colombia y lleva más
-                    de 10 años estudiando y trabajando en este campo. Su interés
-                    por la psicología y las relaciones surgió después de una
-                    fuerte ruptura sentimental que lo llevó a investigar sobre
-                    la psicología y la dinámica de las relaciones de pareja. A
-                    pesar de los éxitos iniciales, también experimentó
-                    decepciones y desafíos en sus relaciones, lo que lo llevó a
-                    profundizar aún más en el campo de la inteligencia
-                    emocional, las habilidades sociales, relaciones de pareja y
-                    psicología evolucionista.
-                  </p>
-
-                  <ReadMoreReadLess limit={0}>
+                  <ReadMoreReadLess
+                    limit={0}
+                    initialLimit={209}
+                    firstParagraph='Juan Lopez es un psicólogo profesional y consultor especializado en habilidades sociales, relaciones interpersonales y de pareja. Nació en Colombia y lleva más de 10 años estudiando y trabajando en este campo. Su interés por la psicología y las relaciones surgió después de una fuerte ruptura sentimental que lo llevó a investigar sobre la psicología y la dinámica de las relaciones de pareja. A pesar de los éxitos iniciales, también experimentó decepciones y desafíos en sus relaciones, lo que lo llevó a profundizar aún más en el campo de la inteligencia emocional, las habilidades sociales, relaciones de pareja y psicología evolucionista.'
+                  >
                     {[
                       'Juan se ha especializado en ayudar a los hombres a desarrollar sus habilidades sociales, mejorar su autoconcepto y autoestima, y mejorar la calidad de sus relaciones a través de la combinación de su formación en psicología y su experiencia personal. Con su amplio conocimiento y experiencia, Juan ha atendido a cientos de casos y ha ayudado a muchos hombres a mejorar sus vidas y sus relaciones.',
                       'Hoy se especializa en apoyar procesos para desarrollo del autoestima, inteligencia emocional y resolución de conflictos en relaciones, mejora de la comunicación en pareja, superación de rupturas amorosas, definición de sentimientos y emociones, mejora de la atracción en una relación, entendimiento de las dinámicas en las relaciones de pareja, y desarrollo de habilidades sociales y de citas.',

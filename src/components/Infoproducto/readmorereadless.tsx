@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 
 interface ReadMoreReadLessProps {
+  initialLimit: number;
   limit: number;
+  firstParagraph: string;
   children?: string[];
 }
 
-const ReadMoreReadLess = ({ limit, children }: ReadMoreReadLessProps) => {
+const ReadMoreReadLess = ({
+  initialLimit,
+  limit,
+  firstParagraph,
+  children,
+}: ReadMoreReadLessProps) => {
   const [isReadMoreShown, setReadMoreShown] = useState(false);
 
   const toggleBtn = () => {
@@ -18,14 +25,26 @@ const ReadMoreReadLess = ({ limit, children }: ReadMoreReadLessProps) => {
     const truncatedContent = isReadMoreShown
       ? children
       : children.slice(0, limit);
-    content = truncatedContent.map((paragraph, index) => (
-      <p
-        key={index}
-        className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'
-      >
-        {paragraph}
-      </p>
-    ));
+
+    const firstParaTruncatedContent = isReadMoreShown
+      ? firstParagraph
+      : firstParagraph.slice(0, initialLimit);
+
+    content = (
+      <>
+        <p className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'>
+          {firstParaTruncatedContent}
+        </p>
+        {truncatedContent.map((paragraph, index) => (
+          <p
+            key={index}
+            className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'
+          >
+            {paragraph}
+          </p>
+        ))}
+      </>
+    );
   }
 
   return (
