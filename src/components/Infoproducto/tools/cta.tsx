@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Container from './container';
+import Container from '../container';
 
 export default function Cta() {
   return (

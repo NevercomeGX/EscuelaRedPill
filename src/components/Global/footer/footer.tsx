@@ -77,7 +77,11 @@ export default function Footer() {
                 </g>
               </svg>
             </a>
-            <a href='' target='_blank' rel='noopener noreferrer'>
+            <a
+              href='https://www.ivoox.com/en/escuela-de-la-red-pill_bk_list_10432211_1.html'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               <Image width={30} height={30} src='/iv.png' alt='..' />
             </a>
             <a

@@ -35,15 +35,18 @@ export default function Linktree({
       >
         <figure className='   m-0 flex w-full justify-center py-0 px-[10px] text-center align-middle '>
           <Image
-            className='box-content h-[150px] w-[150px] rounded-[150px] border-2 border-[#f2f2f2] object-cover   '
-            src='/assets/IMG_8642.png'
+            className='box-content h-[150px] w-[150px] rounded-[150px] object-cover   '
+            src='/assets/IMG_0385_1.jpg'
             alt=''
             width={150}
             height={150}
           />
         </figure>
 
-        <h1 className='mt-2 mb-2 text-3xl font-bold text-white'>{data.name}</h1>
+        <h1 className='mt-2  text-3xl font-bold text-white'>{data.name}</h1>
+        <h1 className='text- mb-2 text-sm font-thin italic text-white'>
+          "Todo lo que quieres esta al otro lado del miedo".
+        </h1>
         <div className=' text-bold mb-4 font-mono  text-xl text-green-600  shadow-lg shadow-green-800'>
           <Typewriter
             options={{
