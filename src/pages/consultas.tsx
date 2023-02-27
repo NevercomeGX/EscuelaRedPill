@@ -1,6 +1,9 @@
 import dynamic from 'next/dynamic';
 import React from 'react';
 import '@fontsource/raleway';
+const PopupWidget = dynamic(
+  () => import('../components/Infoproducto/popupWidget')
+);
 
 const Footer = dynamic(() => import('../components/Global/footer/footer'));
 
@@ -22,6 +25,7 @@ export default function Consulting() {
       <Navbar />
       <Content />
       <Footer />
+      <PopupWidget />
     </>
   );
 }

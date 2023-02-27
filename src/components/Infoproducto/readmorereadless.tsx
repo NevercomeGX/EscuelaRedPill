@@ -4,6 +4,7 @@ interface ReadMoreReadLessProps {
   initialLimit: number;
   limit: number;
   firstParagraph: string;
+  color: string;
   children?: string[];
 }
 
@@ -12,6 +13,7 @@ const ReadMoreReadLess = ({
   limit,
   firstParagraph,
   children,
+  color,
 }: ReadMoreReadLessProps) => {
   const [isReadMoreShown, setReadMoreShown] = useState(false);
 
@@ -32,13 +34,17 @@ const ReadMoreReadLess = ({
 
     content = (
       <>
-        <p className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'>
+        <p
+          className={`'py-2 leading-normal ${color} dark:text-gray-300 lg:text-xl xl:text-xl`}
+          style={{ marginBottom: '1em' }}
+        >
           {firstParaTruncatedContent}
         </p>
         {truncatedContent.map((paragraph, index) => (
           <p
             key={index}
-            className='py-2 leading-normal text-white dark:text-gray-300 lg:text-xl xl:text-xl'
+            className={`'py-2 leading-normal ${color} dark:text-gray-300 lg:text-xl xl:text-xl`}
+            style={{ marginBottom: '1em' }}
           >
             {paragraph}
           </p>

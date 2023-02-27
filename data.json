@@ -1,20 +1,20 @@
 {
 	"name": "Juan López",
-	"avatar": "/assets/IMG_8642.png",
+	"avatar": "/assets/IMG_0385_1.jpg",
 	"maincard": [
+		{
+			"title": "EL ABC DE LA COMUNICACION - TALLER COMPLETO (68% OFF)",
+			"href": "/abcdelacomunicacion",
+			"image": "",
+			"message": "Vence tu timidez | Mejora tus relaciones | Aprende a ser un lider"
+		}
+	],
+	"links": [
 		{
 			"title": "Asesoría Personalizada - Privada con Juan",
 			"href": "/consultas",
 			"image": "",
 			"message": "Habilidades Sociales | Inteligencia Emocional | Relaciones de Pareja | Psicoterapia"
-		}
-	],
-	"links": [
-		{
-			"title": "Taller GRATIS de Habilidades Sociales",
-			"href": "https://docs.google.com/forms/d/e/1FAIpQLScVY7FgoTUbzyNqKO7qigcXiifqZzLl4MLcFgVjQZMm8EScgg/viewform",
-			"image": "",
-			"message": "El ABC de la comunicacion"
 		}
 	],
 	"socials": [

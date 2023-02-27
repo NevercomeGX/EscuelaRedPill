@@ -1,3 +1,5 @@
+import ReadMoreReadLess from '@/components/Infoproducto/readmorereadless';
+
 const Aboutme = () => {
   return (
     <>
@@ -11,32 +13,51 @@ const Aboutme = () => {
               Acerca de mi
             </h3>
             <div className='m-0 pt-0 text-[18px] font-[500] leading-[20px] text-[#0c1827] '>
-              <p>
-                Juan Lopez es un psicólogo profesional y consultor especializado
-                en habilidades sociales, relaciones interpersonales y de pareja.
-                Nació en Colombia y lleva más de 10 años estudiando y trabajando
-                en este campo.
-              </p>
-              <br />
-              <p>
-                Su interés por la psicología y las relaciones surgió después de
-                una fuerte ruptura sentimental que lo llevó a investigar sobre
-                la psicología y la dinámica de las relaciones de pareja. A pesar
-                de los éxitos iniciales, también experimentó decepciones y
-                desafíos en sus relaciones, lo que lo llevó a profundizar aún
-                más en el campo de la inteligencia emocional, las habilidades
-                sociales, relaciones de pareja y psicología evolucionista.
-              </p>
-              <br />
-              <p>
-                Juan se ha especializado en ayudar a los hombres a desarrollar
-                sus habilidades sociales, mejorar su autoconcepto y autoestima,
-                y mejorar la calidad de sus relaciones a través de la
-                combinación de su formación en psicología y su experiencia
-                personal. Con su amplio conocimiento y experiencia, Juan ha
-                atendido a cientos de casos y ha ayudado a muchos hombres a
-                mejorar sus vidas y sus relaciones.
-              </p>
+              <div className='hidden lg:block'>
+                <p>
+                  Juan Lopez es un psicólogo profesional y consultor
+                  especializado en habilidades sociales, relaciones
+                  interpersonales y de pareja. Nació en Colombia y lleva más de
+                  10 años estudiando y trabajando en este campo.
+                </p>
+                <br />
+                <p>
+                  Su interés por la psicología y las relaciones surgió después
+                  de una fuerte ruptura sentimental que lo llevó a investigar
+                  sobre la psicología y la dinámica de las relaciones de pareja.
+                  A pesar de los éxitos iniciales, también experimentó
+                  decepciones y desafíos en sus relaciones, lo que lo llevó a
+                  profundizar aún más en el campo de la inteligencia emocional,
+                  las habilidades sociales, relaciones de pareja y psicología
+                  evolucionista.
+                </p>
+                <br />
+                <p>
+                  Juan se ha especializado en ayudar a los hombres a desarrollar
+                  sus habilidades sociales, mejorar su autoconcepto y
+                  autoestima, y mejorar la calidad de sus relaciones a través de
+                  la combinación de su formación en psicología y su experiencia
+                  personal. Con su amplio conocimiento y experiencia, Juan ha
+                  atendido a cientos de casos y ha ayudado a muchos hombres a
+                  mejorar sus vidas y sus relaciones.
+                </p>
+              </div>
+              <div className='block lg:hidden'>
+                <ReadMoreReadLess
+                  limit={0}
+                  initialLimit={500}
+                  firstParagraph='                Juan Lopez es un psicólogo profesional y consultor especializado
+                  en habilidades sociales, relaciones interpersonales y de pareja.
+                  Nació en Colombia y lleva más de 10 años estudiando y trabajando
+                  en este campo.'
+                  color='text-black'
+                >
+                  {[
+                    'Su interés por la psicología y las relaciones surgió después de una fuerte ruptura sentimental que lo llevó a investigar sobre la psicología y la dinámica de las relaciones de pareja. A pesar de los éxitos iniciales, también experimentó decepciones y desafíos en sus relaciones, lo que lo llevó a profundizar aún más en el campo de la inteligencia emocional, las habilidades sociales, relaciones de pareja y psicología evolucionista.',
+                    'Juan se ha especializado en ayudar a los hombres a desarrollar sus habilidades sociales, mejorar su autoconcepto y autoestima, y mejorar la calidad de sus relaciones a través de la combinación de su formación en psicología y su experiencia personal. Con su amplio conocimiento y experiencia, Juan ha atendido a cientos de casos y ha ayudado a muchos hombres a mejorar sus vidas y sus relaciones.',
+                  ]}
+                </ReadMoreReadLess>
+              </div>
             </div>
           </article>
         </div>
