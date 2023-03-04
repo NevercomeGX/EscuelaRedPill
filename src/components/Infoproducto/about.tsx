@@ -79,11 +79,11 @@ export default function About() {
                 Para ti por precio del primer lanzamiento{' '}
               </p>
               <p className='mb-4  text-center text-5xl text-green-500'>
-                159 USD
+                210 USD
               </p>
 
               <p className='bg max-w-xl pb-6 text-center text-2xl text-green-500 underline'>
-                Inscribete con un 68% de descuento.
+                Inscribete con un 42% de descuento.
               </p>
               <div className='mb-8 '>
                 <p className='bg max-w-xl text-center text-lg text-white'>
