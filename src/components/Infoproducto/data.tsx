@@ -24,7 +24,7 @@ const benefitOne = {
     },
     {
       title:
-        '⦁	Se hará uso de la plataforma ZOOM para dar acceso a los inscritos. ',
+        '⦁	Se hará uso de la plataforma MEET para dar acceso a los inscritos. ',
       desc: '',
     },
     {
